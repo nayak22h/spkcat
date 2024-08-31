@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalogs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .category {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .category h2 {
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-bottom: 1px solid #ddd;
+        }
+        .subcategory {
+            display: none;
+            padding-left: 20px;
+        }
+        .subcategory a {
+            display: block;
+            padding: 5px 0;
+        }
+    </style>
+    <script>
+        function toggleSubcategories(element) {
+            var subcategory = element.nextElementSibling;
+            if (subcategory.style.display === "none" || subcategory.style.display === "") {
+                subcategory.style.display = "block";
+            } else {
+                subcategory.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Product Catalogs</h1>
+
+    <div class="category">
+        <h2 onclick="toggleSubcategories(this)">1. Exterior & Interior Plasters</h2>
+        <div class="subcategory">
+            <a href="path/to/Tek-Plast_AC_Plus.pdf" target="_blank">Tek-Plast AC Plus</a>
+            <a href="path/to/Tek-Plast_AC.pdf" target="_blank">Tek-Plast AC</a>
+            <a href="path/to/Tek-Plast_CL.pdf" target="_blank">Tek-Plast CL</a>
+            <a href="path/to/Tek-Plast_CP.pdf" target="_blank">Tek-Plast CP</a>
+            <a href="path/to/Tek-Plast_GP.pdf" target="_blank">Tek-Plast GP</a>
+            <a href="path/to/Tek-Plast_HP.pdf" target="_blank">Tek-Plast HP</a>
+            <a href="path/to/Thermosit_Mortar_C.pdf" target="_blank">Thermosit Mortar C</a>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 onclick="toggleSubcategories(this)">2. Adhesives & Bonding Agents</h2>
+        <div class="subcategory">
+            <a href="path/to/Tek-Bond_AR.pdf" target="_blank">Tek-Bond AR</a>
+            <a href="path/to/Tek-Bond_EA.pdf" target="_blank">Tek-Bond EA</a>
+            <a href="path/to/Tek-Bond_EP.pdf" target="_blank">Tek-Bond EP</a>
+            <a href="path/to/Tek-Bond_PVA.pdf" target="_blank">Tek-Bond PVA</a>
+            <a href="path/to/Tek-Bond_SBR.pdf" target="_blank">Tek-Bond SBR</a>
+        </div>
+    </div>
+
+    <!-- Repeat this structure for all other categories and subcategories -->
+
+    <div class="category">
+        <h2 onclick="toggleSubcategories(this)">3. Pre-plaster Mortars</h2>
+        <div class="subcategory">
+            <a href="path/to/Tek-Bind_CHB.pdf" target="_blank">Tek-Bind CHB</a>
+            <a href="path/to/Tek-Bind_RC.pdf" target="_blank">Tek-Bind RC</a>
+            <a href="path/to/Tek-Bond_LCB.pdf" target="_blank">Tek-Bond LCB</a>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 onclick="toggleSubcategories(this)">4. Curing Compounds</h2>
+        <div class="subcategory">
+            <a href="path/to/Tek-Cure_AR.pdf" target="_blank">Tek-Cure AR</a>
+            <a href="path/to/Tek-Cure_CS.pdf" target="_blank">Tek-Cure CS</a>
+            <a href="path/to/Tek-Cure_WB.pdf" target="_blank">Tek-Cure WB</a>
+        </div>
+    </div>
+
+    <!-- Continue for all other categories -->
+
+</body>
+</html>
