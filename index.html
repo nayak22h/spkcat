@@ -4,58 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Catalogs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .category {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            padding: 10px;
-        }
-        .category h2 {
-            cursor: pointer;
-            margin: 0;
-            padding: 10px;
-            background-color: #f4f4f4;
-            border-bottom: 1px solid #ddd;
-            position: relative;
-        }
-        .category h2::before {
-            content: "+";
-            position: absolute;
-            right: 20px;
-            font-size: 20px;
-            color: #555;
-        }
-        .category.open h2::before {
-            content: "-";
-        }
-        .subcategory {
-            display: none;
-            padding-left: 20px;
-        }
-        .subcategory a {
-            display: block;
-            padding: 5px 0;
-        }
-    </style>
-    <script>
-        function toggleSubcategories(element) {
-            var subcategory = element.nextElementSibling;
-            var parentCategory = element.parentElement;
-
-            if (subcategory.style.display === "none" || subcategory.style.display === "") {
-                subcategory.style.display = "block";
-                parentCategory.classList.add("open");
-            } else {
-                subcategory.style.display = "none";
-                parentCategory.classList.remove("open");
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Product Catalogs</h1>
@@ -106,5 +55,6 @@
 
     <!-- Continue for all other categories -->
 
+    <script src="script.js"></script>
 </body>
 </html>
