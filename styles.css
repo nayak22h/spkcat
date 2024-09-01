@@ -2,6 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
 .category {
     border: 1px solid #ddd;
     border-radius: 5px;
