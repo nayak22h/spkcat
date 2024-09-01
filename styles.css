@@ -25,6 +25,9 @@ header {
 
     .logo {
         margin-bottom: 10px; /* Add some space below the logo */
+        display: block; /* Ensure the logo is a block element */
+        margin-left: auto; /* Center the logo horizontally */
+        margin-right: auto;
     }
 }
 
