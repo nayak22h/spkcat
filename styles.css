@@ -31,6 +31,11 @@ header {
     }
 }
 
+.responsive-gif {
+    width: 100%;
+    height: auto;
+}
+
 .category {
     border: 1px solid #ddd;
     border-radius: 5px;
