@@ -15,6 +15,19 @@ header {
     width: auto;
 }
 
+/* Center the logo on mobile and stack the text below it */
+@media (max-width: 768px) {
+    header {
+        justify-content: center; /* Center the content in the header */
+        flex-direction: column; /* Arrange content in a column */
+        text-align: center; /* Center-align the text inside the header */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Add some space below the logo */
+    }
+}
+
 .category {
     border: 1px solid #ddd;
     border-radius: 5px;
