@@ -1,0 +1,31 @@
+{
+    "products": {
+        "productA": {
+            "name": "Product A",
+            "description": "This is the description for Product A.",
+            "images": [
+                "https://placehold.co/800x400?text=Product+A+Image+1",
+                "https://placehold/800x400?text=Product+A+Image+2"
+            ],
+            "catalogLink": "#catalogA"
+        },
+        "productB": {
+            "name": "Product B",
+            "description": "This is the description for Product B.",
+            "images": [
+                "https://placehold.co/800x400?text=Product+B+Image+1",
+                "https://placehold.co/800x400?text=Product+B+Image+2"
+            ],
+            "catalogLink": "#catalogB"
+        },
+        "productC": {
+            "name": "Product C",
+            "description": "This is the description for Product C.",
+            "images": [
+                "https://placehold.co/800x400?text=Product+C+Image+1",
+                "https://placehold.co/800x400?text=Product+C+Image+2"
+            ],
+            "catalogLink": "#catalogC"
+        }
+    }
+}

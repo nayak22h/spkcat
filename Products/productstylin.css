@@ -1,0 +1,82 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* Image carousel styling */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Navigation dots */
+.dots {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Product details */
+.product-details {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-description {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.catalog-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.catalog-link:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <link rel="stylesheet" href="productstylin.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+
+
+    <div class="container">
+	 <div class="product-list">
+            <h2>Select a Product:</h2>
+            <ul>
+                <li><a href="#" onclick="loadProduct('productA')">Product A</a></li>
+                <li><a href="#" onclick="loadProduct('productB')">Product B</a></li>
+                <li><a href="#" onclick="loadProduct('productC')">Product C</a></li>
+            </ul>
+        </div>
+	
+        <!-- Image Carousel -->
+        <div class="product-details">
+            <div class="carousel">
+                <div class="slides" id="productImages">
+                    <!-- Images will be dynamically inserted here -->
+                </div>
+            </div>
+            <div class="dots" id="dots"></div>
+
+            <div class="product-name" id="productName"></div>
+            <div class="product-description" id="productDescription"></div>
+            <a href="#" class="catalog-link" id="catalogLink">View Product Catalog</a>
+        </div>
+    </div>
+
+    <script src="product.js"></script> <!-- Link to the JavaScript file -->
+
+</body>
+</html>
