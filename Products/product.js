@@ -1,83 +1,66 @@
 let slideIndex = 0;
+let productsData = {}; // To hold the product data from the JSON
 
-let productsData = {
-    productA: {
-        name: "Product A",
-        description: "Description of Product A.",
-        catalogLink: "#", // Add a link to the catalog if available
-        images: ["img/productA1.jpg", "img/productA2.jpg"]
-    },
-    productB: {
-        name: "Product B",
-        description: "Description of Product B.",
-        catalogLink: "#", // Add a link to the catalog if available
-        images: ["img/productB1.jpg", "img/productB2.jpg"]
-    },
-    productC: {
-        name: "Product C",
-        description: "Description of Product C.",
-        catalogLink: "#", // Add a link to the catalog if available
-        images: ["img/productC1.jpg", "img/productC2.jpg"]
-    }
-};
+// Fetch product data from JSON file
+fetch('products.json')
+    .then(response => response.json())
+    .then(data => {
+        productsData = data.products;
+        loadProduct('productA'); // Load the default product
+    })
+    .catch(error => console.error('Error fetching product data:', error));
 
-// Load default product on page load
-window.onload = function () {
-    loadProduct('productA'); // Load default product A
-};
-
-// Function to load a product by ID
+// Function to load a product by ID from the JSON data
 function loadProduct(productId) {
     const product = productsData[productId];
 
     if (product) {
-        // Set product name and description
+        // Set product name, description, and catalog link
         document.getElementById('productName').innerText = product.name;
         document.getElementById('productDescription').innerText = product.description;
         document.getElementById('catalogLink').setAttribute('href', product.catalogLink);
 
-        // Set product images
+        // Clear previous images and dots
         const slidesContainer = document.getElementById('productImages');
         const dotsContainer = document.getElementById('dots');
-        slidesContainer.innerHTML = ''; // Clear previous slides
-        dotsContainer.innerHTML = ''; // Clear previous dots
+        slidesContainer.innerHTML = '';
+        dotsContainer.innerHTML = '';
 
+        // Add product images and dots
         product.images.forEach((image, index) => {
-            // Create image elements for the carousel
             const imgElement = document.createElement('img');
             imgElement.src = image;
-            imgElement.style.display = index === 0 ? 'block' : 'none'; // Show the first image by default
+            imgElement.style.display = index === 0 ? 'block' : 'none';
             slidesContainer.appendChild(imgElement);
 
-            // Create navigation dots
             const dot = document.createElement('span');
             dot.className = 'dot';
-            dot.onclick = () => currentSlide(index); // Navigate to specific slide
+            dot.onclick = () => currentSlide(index);
             dotsContainer.appendChild(dot);
         });
 
-        slideIndex = 0; // Reset to the first slide
+        slideIndex = 0;
         showSlides(); // Start the slideshow
     }
 }
 
-// Slideshow logic
+// Slideshow logic for carousel
 function showSlides() {
     const slides = document.querySelectorAll('#productImages img');
     const dots = document.querySelectorAll('.dot');
 
     slides.forEach((slide, index) => {
-        slide.style.display = index === slideIndex ? 'block' : 'none'; // Show current slide
+        slide.style.display = index === slideIndex ? 'block' : 'none'; // Display the current slide
     });
 
     dots.forEach(dot => dot.classList.remove('active')); // Remove active class from all dots
     if (dots[slideIndex]) dots[slideIndex].classList.add('active'); // Highlight current dot
 
-    slideIndex = (slideIndex + 1) % slides.length; // Move to next slide
+    slideIndex = (slideIndex + 1) % slides.length; // Move to the next slide
     setTimeout(showSlides, 7000); // Change image every 7 seconds
 }
 
-// Navigate to specific slide
+// Function to go to a specific slide
 function currentSlide(index) {
     slideIndex = index;
     showSlides();

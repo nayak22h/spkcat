@@ -1,13 +1,13 @@
 {
     "products": {
         "productA": {
-            "name": "Product A",
-            "description": "This is the description for Product A.",
+            "name": "Tek-Plast AC Plus",
+            "description": "Tek-Plast AC Plus is a single component acrylic color plaster specially formulated from selected acrylic co-polymers, binders, pigments, sand, admixtures and aggregates. Plastering application on all kinds of internal & external building surfaces.",
             "images": [
                 "https://i.postimg.cc/dVFGv1n3/Tile-Grout-Color-Chart-1.png",
                 "https://i.postimg.cc/fTmY6Xc1/Tile-Grout-Color-Chart-2.png"
             ],
-            "catalogLink": "#catalogA"
+            "catalogLink": "path/to/Thermosit Mortar C.pdf"
         },
         "productB": {
             "name": "Product B",
