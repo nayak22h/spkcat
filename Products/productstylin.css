@@ -26,7 +26,10 @@ body {
 }
 
 .carousel img {
-    width: 50%;
+    max-width: 500px;
+    /* set a maximum width */
+    max-height: 800px;
+    /* set a maximum height */
     border-radius: 10px;
 }
 
