@@ -7,7 +7,7 @@
                 "https://i.postimg.cc/dVFGv1n3/Tile-Grout-Color-Chart-1.png",
                 "https://i.postimg.cc/fTmY6Xc1/Tile-Grout-Color-Chart-2.png"
             ],
-            "catalogLink": "path/to/Thermosit Mortar C.pdf"
+            "catalogLink": "../path/to/Thermosit Mortar C.pdf"
         },
         "productB": {
             "name": "Product B",
