@@ -6,6 +6,7 @@ fetch('products.json')
     .then(response => response.json())
     .then(data => {
         productsData = data.products;
+        console.log('Products data:', productsData);
 
         // Extract the product query parameter from the URL
         const params = new URLSearchParams(window.location.search);
