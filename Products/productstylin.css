@@ -14,17 +14,23 @@ body {
 
 /* Image carousel styling */
 .carousel {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
+    position: relative !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    /* Vertically center the slides */
     justify-content: center;
+    /* Horizontally center the slides */
 }
 
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    flex-wrap: nowrap;
+    /* Prevent the slides from wrapping to the next line */
 }
 
 .carousel img {
