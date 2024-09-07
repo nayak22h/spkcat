@@ -6,7 +6,17 @@ fetch('products.json')
     .then(response => response.json())
     .then(data => {
         productsData = data.products;
-        loadProduct('productA'); // Load the default product
+
+        // Extract the product query parameter from the URL
+        const params = new URLSearchParams(window.location.search);
+        const product = params.get('product');
+
+        // If product is found in the query, load it. Otherwise, load default productA.
+        if (product && productsData[product]) {
+            loadProduct(product);
+        } else {
+            loadProduct('productA'); // Fallback to default productA if no query parameter is present
+        }
     })
     .catch(error => console.error('Error fetching product data:', error));
 
@@ -41,6 +51,8 @@ function loadProduct(productId) {
 
         slideIndex = 0;
         showSlides(); // Start the slideshow
+    } else {
+        console.error('Product not found:', productId);
     }
 }
 
