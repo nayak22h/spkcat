@@ -15,7 +15,7 @@
         <h1>Product Catalogs</h1>
         <!-- Add a link to the contact page -->
         <nav>
-            <a href="contact.html">Contact Me</a>
+            <a href="../contact.html">Contact Me to place Order</a>
         </nav>
     </header>
 
@@ -50,6 +50,7 @@
         // Extract the query parameter from the URL
         const params = new URLSearchParams(window.location.search);
         const product = params.get('product');
+        console.log('Query parameter for product:', product);
 
         // Call the loadProduct function using the product name from the query parameter
         if (product) {
