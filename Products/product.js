@@ -10,10 +10,14 @@ fetch('products.json')
         // Extract the product query parameter from the URL
         const params = new URLSearchParams(window.location.search);
         const product = params.get('product');
+        const productId = product; // No need to convert to uppercase since your product IDs are already in the correct case
+
+        console.log('Product:', productId);
+        console.log('Product data:', productsData[productId]);
 
         // If product is found in the query, load it. Otherwise, load default productA.
-        if (product && productsData[product]) {
-            loadProduct(product);
+        if (productId && productsData[productId]) {
+            loadProduct(productId);
         } else {
             loadProduct('productA'); // Fallback to default productA if no query parameter is present
         }
