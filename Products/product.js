@@ -5,7 +5,7 @@ let productsData = {}; // To hold the product data from the JSON
 fetch('products.json')
     .then(response => response.json())
     .then(data => {
-        productsData = data.products;
+        productsData = data; // Store the entire products object
         console.log('Products data:', productsData);
 
         // Extract the product query parameter from the URL
@@ -14,10 +14,10 @@ fetch('products.json')
         const productId = product; // No need to convert to uppercase since your product IDs are already in the correct case
 
         console.log('Product:', productId);
-        console.log('Product data:', productsData[productId]);
+        console.log('Product data:', productsData.products[productId]); // Access the product data using the "products" key
 
         // If product is found in the query, load it. Otherwise, load default productA.
-        if (productId && productsData[productId]) {
+        if (productId && productsData.products[productId]) {
             loadProduct(productId);
         } else {
             loadProduct('productA'); // Fallback to default productA if no query parameter is present
@@ -27,7 +27,9 @@ fetch('products.json')
 
 // Function to load a product by ID from the JSON data
 function loadProduct(productId) {
-    const product = productsData[productId];
+    const products = productsData.products; // Access the "products" key
+    const product = products[productId]; // Then access the product data using the productId
+    console.log('Loading product:', product); // Add this line to verify
 
     if (product) {
         // Set product name, description, and catalog link
