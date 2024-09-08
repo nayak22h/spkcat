@@ -48,19 +48,19 @@
 
     <script src="product.js"></script> <!-- Link to the JavaScript file -->
 
+    <!-- Remove the existing script tag and replace it with the following code -->
     <script>
         // Extract the query parameter from the URL
         const params = new URLSearchParams(window.location.search);
         const product = params.get('product');
-        console.log('Query parameter for product:', product);
+        const productId = parseInt(product); // Convert product ID to an integer
 
-        // Define an array of allowed product names
-        const allowedProducts = ['product1', 'product2', 'product3'];
+        console.log('Query parameter for product:', productId);
 
-        // Check if the product is in the allowed list
-        if (allowedProducts.includes(product)) {
-            // Call the loadProduct function using the product name from the query parameter
-            loadProduct(product);
+        // Check if the product ID is a valid number
+        if (!isNaN(productId) && productId > 0) {
+            // Call the loadProduct function using the product ID
+            loadProduct(productId);
         } else {
             document.getElementById('productName').innerText = "Invalid product selected.";
         }

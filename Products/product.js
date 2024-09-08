@@ -11,7 +11,7 @@ fetch('products.json')
         // Extract the product query parameter from the URL
         const params = new URLSearchParams(window.location.search);
         const product = params.get('product');
-        const productId = product; // No need to convert to uppercase since your product IDs are already in the correct case
+        const productId = parseInt(product); // Convert product ID to an integer
 
         console.log('Product:', productId);
         console.log('Product data:', productsData.products[productId]); // Access the product data using the "products" key
