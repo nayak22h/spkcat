@@ -10,17 +10,21 @@ fetch('products.json')
 
         // Extract the product query parameter from the URL
         const params = new URLSearchParams(window.location.search);
-        const product = params.get('product');
-        const productId = parseInt(product); // Convert product ID to an integer
+        let product = params.get('product'); // Get the product parameter as a string
 
-        console.log('Product:', productId);
-        console.log('Product data:', productsData.products[productId]); // Access the product data using the "products" key
+        // Check if product is numeric, if so, convert it to 'productX' format
+        if (!isNaN(product)) {
+            product = `product${product}`; // Convert numeric product IDs (like '1') to 'product1'
+        }
 
-        // If product is found in the query, load it. Otherwise, load default productA.
-        if (productId && productsData.products[productId]) {
-            loadProduct(productId);
+        console.log('Product:', product);
+        console.log('Product data:', productsData.products[product]); // Access the product data
+
+        // If product is found in the query, load it. Otherwise, load default product1.
+        if (product && productsData.products[product]) {
+            loadProduct(product); // Use the key as 'product1', 'product2', etc.
         } else {
-            loadProduct('productA'); // Fallback to default productA if no query parameter is present
+            loadProduct('product1'); // Fallback to default 'product1' if no query parameter is present or invalid
         }
     })
     .catch(error => console.error('Error fetching product data:', error));
@@ -28,8 +32,8 @@ fetch('products.json')
 // Function to load a product by ID from the JSON data
 function loadProduct(productId) {
     const products = productsData.products; // Access the "products" key
-    const product = products[productId]; // Then access the product data using the productId
-    console.log('Loading product:', product); // Add this line to verify
+    const product = products[productId]; // Access the product data using the productId (either 'product1', 'product2', etc.)
+    console.log('Loading product:', product);
 
     if (product) {
         // Set product name, description, and catalog link

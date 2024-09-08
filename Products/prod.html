@@ -52,15 +52,13 @@
     <script>
         // Extract the query parameter from the URL
         const params = new URLSearchParams(window.location.search);
-        const product = params.get('product');
-        const productId = parseInt(product); // Convert product ID to an integer
+        const product = params.get('product'); // Get product parameter as a string
 
-        console.log('Query parameter for product:', productId);
+        console.log('Query parameter for product:', product);
 
-        // Check if the product ID is a valid number
-        if (!isNaN(productId) && productId > 0) {
-            // Call the loadProduct function using the product ID
-            loadProduct(productId);
+        // Check if the product exists (could be a number or string like 'product1')
+        if (product) {
+            loadProduct(product); // Pass product as is to the loadProduct function
         } else {
             document.getElementById('productName').innerText = "Invalid product selected.";
         }
