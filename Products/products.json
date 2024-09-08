@@ -1,31 +1,39 @@
 {
     "products": {
-        "productA": {
+        "product1": {
             "name": "Tek-Plast AC Plus",
             "description": "Tek-Plast AC Plus is a single component acrylic color plaster specially formulated from selected acrylic co-polymers, binders, pigments, sand, admixtures and aggregates. Plastering application on all kinds of internal & external building surfaces.",
             "images": [
-                "https://i.postimg.cc/dVFGv1n3/Tile-Grout-Color-Chart-1.png",
-                "https://i.postimg.cc/fTmY6Xc1/Tile-Grout-Color-Chart-2.png"
+                "https://placehold.co/800x400?text=TekplastACplus+Image+1",
+                "https://placehold.co/800x400?text=TekplastACplus+Image+2"
             ],
-            "catalogLink": "../path/to/Thermosit Mortar C.pdf"
+            "catalogLink": "../path/to/Tek-Plast AC Plus.pdf"
         },
-        "productB": {
-            "name": "Product B",
-            "description": "This is the description for Product B.",
+        "product2": {
+            "name": "Tek-Plast AC",
+            "description": "Tek-Plast AC is a single component acrylic plaster specially formulated from selected acrylic co-polymers, binders, sand, admixtures and aggregates. Plastering application on all kinds of internal building surfaces.",
             "images": [
-                "https://placehold.co/800x400?text=Product+B+Image+1",
-                "https://placehold.co/800x400?text=Product+B+Image+2"
+                "https://i.postimg.cc/J0RpGq5D/TEK-Plast-AC-medium-25kg.jpg",
+                "https://i.postimg.cc/c1gHtJ34/Tek-Plast-Ac-fine-25kg.jpg"
             ],
-            "catalogLink": "#catalogB"
+            "catalogLink": "../path/to/Tek-Plast AC.pdf"
         },
-        "productC": {
-            "name": "Product C",
-            "description": "This is the description for Product C.",
+        "product3": {
+            "name": "Tek-Plast CL",
+            "description": "Tek-Plast CL is a single component cementitious colour plaster specially formulated from selected cements, pigments, sand, admixtures and aggregates. Plastering application for use on all kinds of internal & external building surfaces. ",
             "images": [
-                "https://placehold.co/800x400?text=Product+C+Image+1",
-                "https://placehold.co/800x400?text=Product+C+Image+2"
+                "https://placehold.co/800x400?text=TekplastCL+Image+1",
+                "https://placehold.co/800x400?text=TekplastCL+Image+2"
             ],
-            "catalogLink": "#catalogC"
+            "catalogLink": "../path/to/Tek-Plast CL.pdf"
+        },
+        "product4": {
+            "name": "Tek-Plast CP",
+            "description": "Tek-Plast CP is a single component cementitious plaster specially formulated from selected cements, sand, admixtures and aggregates. Plastering application for use on all kinds of internal & external building surfaces. ",
+            "images": [
+                "https://i.postimg.cc/yYvb3w5V/TEK-Plast-CP-50-KG.jpg"
+            ],
+            "catalogLink": "../path/to/Tek-Plast CP.pdf"
         }
     }
 }
