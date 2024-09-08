@@ -54,11 +54,15 @@
         const product = params.get('product');
         console.log('Query parameter for product:', product);
 
-        // Call the loadProduct function using the product name from the query parameter
-        if (product) {
+        // Define an array of allowed product names
+        const allowedProducts = ['product1', 'product2', 'product3'];
+
+        // Check if the product is in the allowed list
+        if (allowedProducts.includes(product)) {
+            // Call the loadProduct function using the product name from the query parameter
             loadProduct(product);
         } else {
-            document.getElementById('productName').innerText = "No product selected.";
+            document.getElementById('productName').innerText = "Invalid product selected.";
         }
     </script>
 </body>
