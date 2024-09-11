@@ -42,6 +42,43 @@
                 "https://i.postimg.cc/kXk7Jc3C/Tek-Bind-Rc.jpg"
             ],
             "catalogLink": "../path/to/Tek-Bind RC.pdf"
+        },
+        "product57": {
+            "name": "Tek-Tile HP",
+            "description": "Tek-Tile HP is a two component cementitious tile adhesive based on a high polymer system with superior adhesion, high strength, and interior & exterior application properties. It can be applied on all variety natural substrates in wet conditions. ",
+            "images": [
+                "https://i.postimg.cc/FKvmcHHn/Tek-tile-HP.jpg"
+            ],
+            "catalogLink": "../path/to/Tek-Bind RC.pdf"
+        },
+        "product116": {
+            "name": "Tek-Bond GJC (Gypsum Joint Compound)",
+            "description": "Tek-Bond GJC is a pre-mixed gypsum co-polymer modified jointing compound with graded fillers used for filling and finishing plasterboard joints prior to painting systems.",
+            "images": [
+                "https://i.postimg.cc/ZYj5Ppkt/gypsum-joint-compound-28kg-full.jpg",
+                "https://i.postimg.cc/g28mnZmZ/gypsumjointcompound-28kg.jpg"
+            ],
+            "catalogLink": "../path/to/Tek-Bond GJC.pdf"
+        },
+        "product46": {
+            "name": "Tek-Grout EG",
+            "description": "Tek-Grout EG is a two component epoxy tile grout based on a high grade epoxy resin system with superior chemical resistance and hygienic properties.",
+            "images": [
+                "https://i.postimg.cc/q7GrGHtB/Tek-grout-EG-part-A-5kg.jpg",
+                "https://i.postimg.cc/HxsgZv5w/tek-grout-EG-part-b-5kg.jpg",
+                "https://i.postimg.cc/fTmY6Xc1/Tile-Grout-Color-Chart-2.png"
+            ],
+            "catalogLink": "../path/to/Tek-Grout EG.pdf"
+        },
+        "product53": {
+            "name": "Tek-Tile GP",
+            "description": "Tek-Tile GP is a single component cementitious tile adhesive based on a high polymer system with superior adhesion, high strength for dry areas in interior & exterior application. It can be applied on a variety of substrates",
+            "images": [
+                "https://i.postimg.cc/T2jSfyJ5/Tile-Glue-Mortar-20kg.jpg",
+                "https://i.postimg.cc/tTSHLdtL/Tek-tile-glue-white-20kg.jpg",
+                "https://i.postimg.cc/QNz3mbM7/tilegluegrey.jpg"
+            ],
+            "catalogLink": "../path/to/Tek-Tile GP.pdf"
         }
     }
 }
