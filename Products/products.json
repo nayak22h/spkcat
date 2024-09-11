@@ -34,6 +34,14 @@
                 "https://i.postimg.cc/yYvb3w5V/TEK-Plast-CP-50-KG.jpg"
             ],
             "catalogLink": "../path/to/Tek-Plast CP.pdf"
+        },
+        "product14": {
+            "name": "Tek-Bind RC",
+            "description": "Tek-Bind RC Rush coat is a dry pre-mixed polymer modified sand cement bond coat used to provide a mechanical key for cement and gypsum plaster. The use of this product eliminates the need for hacking or chipping of the concrete surface before application of the plaster. ",
+            "images": [
+                "https://i.postimg.cc/kXk7Jc3C/Tek-Bind-Rc.jpg"
+            ],
+            "catalogLink": "../path/to/Tek-Bind RC.pdf"
         }
     }
 }
