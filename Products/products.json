@@ -49,7 +49,7 @@
             "images": [
                 "https://i.postimg.cc/FKvmcHHn/Tek-tile-HP.jpg"
             ],
-            "catalogLink": "../path/to/Tek-Bind RC.pdf"
+            "catalogLink": "../path/to/Tek-Bind HP.pdf"
         },
         "product116": {
             "name": "Tek-Bond GJC (Gypsum Joint Compound)",
@@ -79,6 +79,14 @@
                 "https://i.postimg.cc/QNz3mbM7/tilegluegrey.jpg"
             ],
             "catalogLink": "../path/to/Tek-Tile GP.pdf"
-        }
+        },
+        "product117": {
+            "name": "Tek-Fill ST",
+            "description": "Tek-Fill ST Stucco filler is a pre-mixed styrene acrylic co-polymer modified putty with graded fillers used to provide a undercoat leveller prior to painting systems. ",
+            "images": [
+                "https://i.postimg.cc/VLbcVCSV/stuccoputty25kg.jpg",
+            ],
+            "catalogLink": "../path/to/Tek-Fill ST.pdf"
+        },
     }
 }
