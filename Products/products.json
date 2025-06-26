@@ -35,6 +35,14 @@
             ],
             "catalogLink": "../path/to/Tek-Plast CP.pdf"
         },
+        "product10": {
+            "name": "Tek-Bond EP",
+            "description": "TEK-BOND EP is a solvent-free epoxy bonding agent and adhesive containing acid resistant fillers and wetting agents; for the bonding of old concrete to new concrete/render.",
+            "images": [
+                "https://i.postimg.cc/T1zS38C2/tekbondep.png"
+            ],
+            "catalogLink": "../path/to/Tek-Bond EP.pdf"
+        },
         "product14": {
             "name": "Tek-Bind RC",
             "description": "Tek-Bind RC Rush coat is a dry pre-mixed polymer modified sand cement bond coat used to provide a mechanical key for cement and gypsum plaster. The use of this product eliminates the need for hacking or chipping of the concrete surface before application of the plaster. ",
@@ -47,7 +55,8 @@
             "name": "Tek-Crete EFC",
             "description": "Tek-Crete EFC is a multi-component epoxy resin based putty specially formulated from graded fillers and non-sagging agents which makes it ideal for application on vertical surfaces.",
             "images": [
-                "https://i.postimg.cc/DzxMb4BM/Tekcrete-EFC.png"
+                "https://i.postimg.cc/DzxMb4BM/Tekcrete-EFC.png",
+                "https://i.postimg.cc/RZ7rq0kk/tekcreteefc2.png"
             ],
             "catalogLink": "../path/to/Tek-Crete EFC.pdf"
         },
@@ -78,6 +87,22 @@
                 "https://i.postimg.cc/FKvmcHHn/Tek-tile-HP.jpg"
             ],
             "catalogLink": "../path/to/Tek-Tile HP.pdf"
+        },
+        "product69": {
+            "name": "Tek-Screed LTW",
+            "description": "Tek-Screed LTW is a cementitious premixed ready to use product when mixed with water to produce light weight concrete mix for a variety of applications. ",
+            "images": [
+                "https://i.postimg.cc/Fz0RRvND/tekscreed-LTW.png"
+            ],
+            "catalogLink": "../path/to/Tek-Screed LTW.pdf"
+        },
+        "product70": {
+            "name": "Tek-Grip Aggregate",
+            "description": "Tek-Grip Aggregate is processed silica sand. They are used to create anti-slip finish with Tek-Floor car park protective coating systems. It is also used to provide suitable primed surface to create key on smooth surfaces for the application of trowel applied screeds. ",
+            "images": [
+                "https://i.postimg.cc/SNmCH1yc/Tek-grip-aggregate.png"
+            ],
+            "catalogLink": "../path/to/Tek-Grip Aggregate.pdf"
         },
         "product116": {
             "name": "Tek-Bond GJC (Gypsum Joint Compound)",
