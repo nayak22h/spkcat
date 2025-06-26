@@ -43,22 +43,13 @@
             ],
             "catalogLink": "../path/to/Tek-Bind RC.pdf"
         },
-        "product57": {
-            "name": "Tek-Tile HP",
-            "description": "Tek-Tile HP is a two component cementitious tile adhesive based on a high polymer system with superior adhesion, high strength, and interior & exterior application properties. It can be applied on all variety natural substrates in wet conditions. ",
+        "product25": {
+            "name": "Tek-Crete EFC",
+            "description": "Tek-Crete EFC is a multi-component epoxy resin based putty specially formulated from graded fillers and non-sagging agents which makes it ideal for application on vertical surfaces.",
             "images": [
-                "https://i.postimg.cc/FKvmcHHn/Tek-tile-HP.jpg"
+                "https://i.postimg.cc/DzxMb4BM/Tekcrete-EFC.png"
             ],
-            "catalogLink": "../path/to/Tek-Tile HP.pdf"
-        },
-        "product116": {
-            "name": "Tek-Bond GJC (Gypsum Joint Compound)",
-            "description": "Tek-Bond GJC is a pre-mixed gypsum co-polymer modified jointing compound with graded fillers used for filling and finishing plasterboard joints prior to painting systems.",
-            "images": [
-                "https://i.postimg.cc/ZYj5Ppkt/gypsum-joint-compound-28kg-full.jpg",
-                "https://i.postimg.cc/g28mnZmZ/gypsumjointcompound-28kg.jpg"
-            ],
-            "catalogLink": "../path/to/Tek-Bond GJC.pdf"
+            "catalogLink": "../path/to/Tek-Crete EFC.pdf"
         },
         "product46": {
             "name": "Tek-Grout EG",
@@ -79,6 +70,23 @@
                 "https://i.postimg.cc/QNz3mbM7/tilegluegrey.jpg"
             ],
             "catalogLink": "../path/to/Tek-Tile GP.pdf"
+        },
+        "product57": {
+            "name": "Tek-Tile HP",
+            "description": "Tek-Tile HP is a two component cementitious tile adhesive based on a high polymer system with superior adhesion, high strength, and interior & exterior application properties. It can be applied on all variety natural substrates in wet conditions. ",
+            "images": [
+                "https://i.postimg.cc/FKvmcHHn/Tek-tile-HP.jpg"
+            ],
+            "catalogLink": "../path/to/Tek-Tile HP.pdf"
+        },
+        "product116": {
+            "name": "Tek-Bond GJC (Gypsum Joint Compound)",
+            "description": "Tek-Bond GJC is a pre-mixed gypsum co-polymer modified jointing compound with graded fillers used for filling and finishing plasterboard joints prior to painting systems.",
+            "images": [
+                "https://i.postimg.cc/ZYj5Ppkt/gypsum-joint-compound-28kg-full.jpg",
+                "https://i.postimg.cc/g28mnZmZ/gypsumjointcompound-28kg.jpg"
+            ],
+            "catalogLink": "../path/to/Tek-Bond GJC.pdf"
         },
         "product117": {
             "name": "Tek-Fill ST",
