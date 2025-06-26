@@ -67,8 +67,37 @@ function loadProduct(productId) {
     }
 }
 
-// Slideshow logic for carousel
+// NEW Slideshow logic for carousel 
 function showSlides() {
+    const slides = document.querySelectorAll('#productImages img');
+    const dots = document.querySelectorAll('.dot');
+
+    // Hide all slides
+    slides.forEach((slide, index) => {
+        slide.style.display = 'none';
+    });
+
+    // Show the current slide
+    if (slides[slideIndex]) {
+        slides[slideIndex].style.display = 'block';
+    }
+
+    // Update dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[slideIndex]) {
+        dots[slideIndex].classList.add('active');
+    }
+
+    // Schedule next slide after 7 seconds
+    setTimeout(() => {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlides();
+    }, 7000);
+}
+
+
+// OLD Slideshow logic for carousel 
+/*function showSlides() {
     const slides = document.querySelectorAll('#productImages img');
     const dots = document.querySelectorAll('.dot');
 
@@ -81,7 +110,7 @@ function showSlides() {
 
     slideIndex = (slideIndex + 1) % slides.length; // Move to the next slide
     setTimeout(showSlides, 7000); // Change image every 7 seconds
-}
+}*/
 
 // Function to go to a specific slide
 function currentSlide(index) {
