@@ -39,7 +39,7 @@
             "name": "Tek-Bond AR",
             "description": "Tek-Bond AR is a styrene free, milky white emulsion,based on a pure acrylic polymer that is designed to improve the physical properties and integrity of cementitious mortars, screeds or renders, and act as a bonding agent / sealer to concrete, plaster or other porous substrates. ",
             "images": [
-                "https://i.postimg.cc/MZ5NHMp6/Gemini-Generated-Image-36imd136imd136im.png"
+                "https://i.postimg.cc/TPCy4JcL/Tek-bond-AR.png"
             ],
             "catalogLink": "../path/to/Tek-Bond AR.pdf"
         },
@@ -77,6 +77,14 @@
                 "https://i.postimg.cc/fTmY6Xc1/Tile-Grout-Color-Chart-2.png"
             ],
             "catalogLink": "../path/to/Tek-Grout EG.pdf"
+        },
+        "product50": {
+            "name": "Tek-Tile ATA",
+            "description": "Tek-Tile ATA is a single component 'ready-to-use' acrylic tile adhesive based on a high polymer system with superior adhesion, high strength for dry areas in interior application. It can be applied on a variety of substrates. ",
+            "images": [
+                "https://i.postimg.cc/MZ5NHMp6/Gemini-Generated-Image-36imd136imd136im.png"
+            ],
+            "catalogLink": "../path/to/Tek-Tile ATA.pdf"
         },
         "product53": {
             "name": "Tek-Tile GP",
