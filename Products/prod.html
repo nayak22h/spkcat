@@ -46,7 +46,19 @@
 
             <div class="product-name" id="productName"></div>
             <div class="product-description" id="productDescription"></div>
-            <a href="#" class="catalog-link" id="catalogLink">View Product Catalog</a>
+            
+            <button class="catalog-link" id="catalogBtn" style="cursor: pointer; border: none; font-family: inherit;">View Product Catalog</button>
+            
+            <!-- Inline PDF Viewer Container -->
+            <div id="pdfContainer" style="display: none; margin-top: 2rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); width: 100%; height: 75vh; max-height: 800px; background-color: #f1f5f9;">
+                <object id="pdfObject" data="" type="application/pdf" width="100%" height="100%" style="display: block;">
+                    <iframe id="pdfFrameFallback" src="" width="100%" height="100%" style="border: none;">
+                        <p style="padding: 2rem;">Your device does not support inline PDF viewing. <br><br> 
+                            <a id="pdfDownloadLink" href="" style="color: #0c4a6e; font-weight: bold; text-decoration: underline;">Click here to download the PDF</a>
+                        </p>
+                    </iframe>
+                </object>
+            </div>
         </div>
     </div>
 
