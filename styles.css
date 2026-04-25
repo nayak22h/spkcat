@@ -54,6 +54,13 @@ h1 {
     margin: 0;
 }
 
+nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 nav a {
     text-decoration: none;
     color: #ffffff;
