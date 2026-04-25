@@ -130,25 +130,25 @@ window.productsData = {
             "catalogLink": "../path/to/Tek-Bond-GJC.pdf"
         },
         "product118": {
-            "name": "Tek-Screed 20 C - new",
+            "name": "Tek-Screed 20 C",
             "description": "Tek-Screed 20 C is a cementitious floor screed.",
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-20-C-new.pdf"
         },
         "product119": {
-            "name": "Tek-Screed 30 C - new",
+            "name": "Tek-Screed 30 C",
             "description": "Tek-Screed 30 C is a cementitious floor screed.",
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-30-C-new.pdf"
         },
         "product120": {
-            "name": "Tek-Screed 40 C - new",
+            "name": "Tek-Screed 40 C",
             "description": "Tek-Screed 40 C is a cementitious floor screed.",
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-40-C-new.pdf"
         },
         "product121": {
-            "name": "Tek-Screed 50 C - new 2",
+            "name": "Tek-Screed 50 C",
             "description": "Tek-Screed 50 C is a cementitious floor screed.",
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-50-C-new-2.pdf"
