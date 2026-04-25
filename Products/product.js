@@ -36,7 +36,19 @@ function loadProduct(productId) {
         // Set product name, description, and catalog link
         document.getElementById('productName').innerText = product.name;
         document.getElementById('productDescription').innerText = product.description;
-        document.getElementById('catalogLink').setAttribute('href', product.catalogLink);
+        
+        const catalogLink = product.catalogLink;
+        document.getElementById('catalogLink').setAttribute('href', catalogLink);
+        
+        // Setup inline PDF viewer
+        const pdfFrame = document.getElementById('catalogFrame');
+        const pdfContainer = document.getElementById('pdfContainer');
+        if (catalogLink && catalogLink.toLowerCase().endsWith('.pdf')) {
+            pdfFrame.src = catalogLink + '#view=FitH';
+            pdfContainer.style.display = 'block';
+        } else {
+            pdfContainer.style.display = 'none';
+        }
 
         // Clear previous images and dots
         const slidesContainer = document.getElementById('productImages');
@@ -53,12 +65,15 @@ function loadProduct(productId) {
 
             const dot = document.createElement('span');
             dot.className = 'dot';
-            dot.onclick = () => currentSlide(index);
+            dot.addEventListener('click', () => currentSlide(index));
             dotsContainer.appendChild(dot);
         });
 
         slideIndex = 0;
-        showSlides(); // Start the slideshow
+        clearTimeout(slideTimeout); // Clear any existing timeout before starting
+        if (product.images.length > 0) {
+            showSlides(); // Start the slideshow
+        }
     } else {
         console.error('Product not found:', productId);
     }
@@ -87,6 +102,8 @@ function showSlides() {
 
     // Clear existing timer to prevent speeding up when clicking dots
     clearTimeout(slideTimeout);
+
+    if (slides.length <= 1) return; // No need for carousel if 0 or 1 image
 
     // Schedule next slide after 7 seconds
     slideTimeout = setTimeout(() => {
