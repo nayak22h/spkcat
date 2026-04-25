@@ -1,15 +1,8 @@
-/* General styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
+/* Inherit from root styles if imported after, but they are in separate folders. We can copy the root colors. */
 .container {
-    width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 2rem 1rem;
 }
 
 /* Image carousel styling */
@@ -17,84 +10,115 @@ body {
     position: relative !important;
     max-width: 100% !important;
     margin: 0 auto !important;
-    overflow: hidden !important;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     display: flex !important;
     justify-content: center !important;
     align-items: center;
-    /* Vertically center the slides */
-    justify-content: center;
-    /* Horizontally center the slides */
+    overflow: hidden !important;
 }
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     flex-wrap: nowrap;
-    /* Prevent the slides from wrapping to the next line */
 }
 
 .carousel img {
     max-width: 500px;
-    max-height: 800px;
-    border-radius: 10px;
+    max-height: 600px;
+    border-radius: 8px;
     object-fit: contain;
+    animation: fadeImg 0.5s ease-in-out;
+}
+
+@keyframes fadeImg {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
 }
 
 /* Navigation dots */
 .dots {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 1.5rem;
 }
 
 .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: #cbd5e1;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #94a3b8;
+    transform: scale(1.2);
 }
 
 .active {
-    background-color: #717171;
+    background-color: #0284c7; /* Primary light */
+    transform: scale(1.2);
 }
 
 /* Product details */
 .product-details {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 2rem;
+    padding: 2.5rem 2rem;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-name {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0c4a6e;
+    margin-bottom: 1rem;
 }
 
 .product-description {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #555;
+    font-size: 1.15rem;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
 }
 
 .catalog-link {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #28a745;
+    padding: 1rem 2rem;
+    background-color: #22c55e;
     color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .catalog-link:hover {
-    background-color: #218838;
+    background-color: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 768px) {
     .carousel img {
         max-width: 100%;
-        max-height: none;
+        max-height: 400px;
+    }
+    .product-name {
+        font-size: 1.75rem;
     }
 }

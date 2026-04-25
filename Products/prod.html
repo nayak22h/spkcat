@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spraytek Product Details and Showcase">
     <title>Product Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="productstylin.css">
-    <link rel="stylesheet" href="../styles.css"><!-- Link to the CSS file -->
 </head>
 
 <body>
@@ -47,22 +51,6 @@
     </div>
 
     <script src="product.js"></script> <!-- Link to the JavaScript file -->
-
-    <!-- Remove the existing script tag and replace it with the following code -->
-    <script>
-        // Extract the query parameter from the URL
-        const params = new URLSearchParams(window.location.search);
-        const product = params.get('product'); // Get product parameter as a string
-
-        console.log('Query parameter for product:', product);
-
-        // Check if the product exists (could be a number or string like 'product1')
-        if (product) {
-            loadProduct(product); // Pass product as is to the loadProduct function
-        } else {
-            document.getElementById('productName').innerText = "Invalid product selected.";
-        }
-    </script>
 </body>
 
 </html>

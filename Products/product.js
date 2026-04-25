@@ -1,4 +1,5 @@
 let slideIndex = 0;
+let slideTimeout = null;
 let productsData = {}; // To hold the product data from the JSON
 
 // Fetch product data from JSON file
@@ -73,7 +74,7 @@ function showSlides() {
     const dots = document.querySelectorAll('.dot');
 
     // Hide all slides
-    slides.forEach((slide, index) => {
+    slides.forEach((slide) => {
         slide.style.display = 'none';
     });
 
@@ -88,29 +89,15 @@ function showSlides() {
         dots[slideIndex].classList.add('active');
     }
 
+    // Clear existing timer to prevent speeding up when clicking dots
+    clearTimeout(slideTimeout);
+
     // Schedule next slide after 7 seconds
-    setTimeout(() => {
+    slideTimeout = setTimeout(() => {
         slideIndex = (slideIndex + 1) % slides.length;
         showSlides();
     }, 7000);
 }
-
-
-// OLD Slideshow logic for carousel 
-/*function showSlides() {
-    const slides = document.querySelectorAll('#productImages img');
-    const dots = document.querySelectorAll('.dot');
-
-    slides.forEach((slide, index) => {
-        slide.style.display = index === slideIndex ? 'block' : 'none'; // Display the current slide
-    });
-
-    dots.forEach(dot => dot.classList.remove('active')); // Remove active class from all dots
-    if (dots[slideIndex]) dots[slideIndex].classList.add('active'); // Highlight current dot
-
-    slideIndex = (slideIndex + 1) % slides.length; // Move to the next slide
-    setTimeout(showSlides, 7000); // Change image every 7 seconds
-}*/
 
 // Function to go to a specific slide
 function currentSlide(index) {
