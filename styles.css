@@ -317,3 +317,29 @@ nav a:hover {
     background-color: #f5f8fa;
     color: var(--primary-light);
 }
+
+/* Mobile Responsiveness for Header */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .header-left, .header-right {
+        flex: unset;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .header-center {
+        flex: unset;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .search-container {
+        max-width: 100%;
+    }
+}
