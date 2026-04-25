@@ -1,39 +1,35 @@
 let slideIndex = 0;
 let slideTimeout = null;
-let productsData = {}; // To hold the product data from the JSON
 
-// Fetch product data from JSON file
-fetch('products.json')
-    .then(response => response.json())
-    .then(data => {
-        productsData = data; // Store the entire products object
-        console.log('Products data:', productsData);
+// The data is now synchronously loaded from data.js into window.productsData
+console.log('Products data:', window.productsData);
 
-        // Extract the product query parameter from the URL
-        const params = new URLSearchParams(window.location.search);
-        let product = params.get('product'); // Get the product parameter as a string
+// Extract the product query parameter from the URL
+const params = new URLSearchParams(window.location.search);
+let product = params.get('product'); // Get the product parameter as a string
 
-        // Check if product is numeric, if so, convert it to 'productX' format
-        if (!isNaN(product)) {
-            product = `product${product}`; // Convert numeric product IDs (like '1') to 'product1'
-        }
+// Safely evaluate if it's numeric and non-empty
+if (product !== null && product.trim() !== "" && !isNaN(product)) {
+    product = `product${product}`; // Convert numeric product IDs (like '1') to 'product1'
+}
 
-        console.log('Product:', product);
-        console.log('Product data:', productsData.products[product]); // Access the product data
+console.log('Product:', product);
 
-        // If product is found in the query, load it. Otherwise, load default product1.
-        if (product && productsData.products[product]) {
-            loadProduct(product); // Use the key as 'product1', 'product2', etc.
-        } else {
-            loadProduct('product1'); // Fallback to default 'product1' if no query parameter is present or invalid
-        }
-    })
-    .catch(error => console.error('Error fetching product data:', error));
+// If product is found in the query, load it. Otherwise, load default product1.
+if (product && window.productsData && window.productsData.products[product]) {
+    loadProduct(product);
+} else {
+    loadProduct('product1'); // Fallback to default 'product1'
+}
 
 // Function to load a product by ID from the JSON data
 function loadProduct(productId) {
-    const products = productsData.products; // Access the "products" key
-    const product = products[productId]; // Access the product data using the productId (either 'product1', 'product2', etc.)
+    if (!window.productsData) {
+        console.error("productsData is missing. Ensure data.js is loaded correctly.");
+        return;
+    }
+    const products = window.productsData.products; // Access the "products" key
+    const product = products[productId]; // Access the product data using the productId
     console.log('Loading product:', product);
 
     if (product) {
