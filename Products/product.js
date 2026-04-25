@@ -37,40 +37,10 @@ function loadProduct(productId) {
     console.log('Loading product:', product);
 
     if (product) {
-        // Set product name, description
+        // Set product name, description, and catalog link
         document.getElementById('productName').innerText = product.name;
         document.getElementById('productDescription').innerText = product.description;
-
-        // Setup PDF viewer
-        const pdfContainer = document.getElementById('pdfContainer');
-        const pdfObject = document.getElementById('pdfObject');
-        const pdfFrameFallback = document.getElementById('pdfFrameFallback');
-        const pdfDownloadLink = document.getElementById('pdfDownloadLink');
-        const catalogBtn = document.getElementById('catalogBtn');
-
-        // Reset viewer state when loading new product
-        pdfContainer.style.display = 'none';
-        catalogBtn.innerText = 'View Product Catalog';
-
-        // Bind click event to toggle the PDF
-        catalogBtn.onclick = function(e) {
-            e.preventDefault();
-            if (pdfContainer.style.display === 'none') {
-                // Show PDF (Set paths dynamically)
-                pdfObject.setAttribute('data', product.catalogLink);
-                pdfFrameFallback.setAttribute('src', product.catalogLink);
-                pdfDownloadLink.setAttribute('href', product.catalogLink);
-                
-                pdfContainer.style.display = 'block';
-                catalogBtn.innerText = 'Close Product Catalog';
-                // Scroll down slightly so the user sees the PDF viewer opened
-                pdfContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            } else {
-                // Hide PDF
-                pdfContainer.style.display = 'none';
-                catalogBtn.innerText = 'View Product Catalog';
-            }
-        };
+        document.getElementById('catalogLink').setAttribute('href', product.catalogLink);
 
         // Clear previous images and dots
         const slidesContainer = document.getElementById('productImages');
