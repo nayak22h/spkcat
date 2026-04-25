@@ -88,6 +88,15 @@ nav a:hover {
     margin: auto;
 }
 
+.responsive-gif {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
 .category {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
