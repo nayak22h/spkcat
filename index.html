@@ -21,11 +21,29 @@
 
 <body>
     <header>
-        <img src="path/your/logo_new.png" alt="Logo" class="logo">
-        <h1>Product Catalogs</h1>
-        <nav>
-            <a href="contact.html">Contact Me to place Order</a>
-        </nav>
+        <div class="header-left">
+            <a href="index.html">
+                <img src="path/your/logo_new.png" alt="Logo" class="logo">
+            </a>
+        </div>
+        <div class="header-center">
+            <h1>Product Catalogs</h1>
+            <nav>
+                <a href="contact.html">Contact Me to place Order</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="productSearch" placeholder="Search products..." autocomplete="off">
+                </div>
+                <ul id="autocompleteResults" class="autocomplete-dropdown hidden"></ul>
+            </div>
+        </div>
     </header>
 
     <div class="category">
@@ -254,6 +272,8 @@
         </div>
     </div>
 
+    <script src="Products/data.js"></script>
+    <script src="search.js"></script>
     <script src="script.js"></script>
 </body>
 
