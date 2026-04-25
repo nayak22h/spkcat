@@ -24,8 +24,10 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 1.5rem;
     padding: 1.5rem 2.5rem;
     background-color: var(--card-bg);
     box-shadow: var(--shadow-sm);
@@ -38,8 +40,10 @@ header {
 header a { text-decoration: none; }
 
 .logo {
-    height: 60px;
+    height: 200px;
     width: auto;
+    display: block;
+    margin: 0 auto;
     transition: transform 0.3s ease;
 }
 
