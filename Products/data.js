@@ -8,7 +8,8 @@ window.productsData = {
                 "https://placehold.co/800x400?text=TekplastACplus+Image+2"
             ],
             "catalogLink": "../path/to/Tek-Plast-AC-Plus.pdf",
-            "category": "Exterior & Interior Plasters"
+            "category": "Exterior & Interior Plasters",
+            "categoryId": "cat-1"
         },
         "product2": {
             "name": "Tek-Plast AC",
@@ -18,7 +19,8 @@ window.productsData = {
                 "https://i.postimg.cc/c1gHtJ34/Tek-Plast-Ac-fine-25kg.jpg"
             ],
             "catalogLink": "../path/to/Tek-Plast-AC.pdf",
-            "category": "Exterior & Interior Plasters"
+            "category": "Exterior & Interior Plasters",
+            "categoryId": "cat-1"
         },
         "product3": {
             "name": "Tek-Plast CL",
@@ -28,7 +30,8 @@ window.productsData = {
                 "https://placehold.co/800x400?text=TekplastCL+Image+2"
             ],
             "catalogLink": "../path/to/Tek-Plast-CL.pdf",
-            "category": "Exterior & Interior Plasters"
+            "category": "Exterior & Interior Plasters",
+            "categoryId": "cat-1"
         },
         "product4": {
             "name": "Tek-Plast CP",
@@ -37,7 +40,8 @@ window.productsData = {
                 "https://i.postimg.cc/yYvb3w5V/TEK-Plast-CP-50-KG.jpg"
             ],
             "catalogLink": "../path/to/Tek-Plast-CP.pdf",
-            "category": "Exterior & Interior Plasters"
+            "category": "Exterior & Interior Plasters",
+            "categoryId": "cat-1"
         },
         "product8": {
             "name": "Tek-Bond AR",
@@ -46,7 +50,8 @@ window.productsData = {
                 "https://i.postimg.cc/TPCy4JcL/Tek-bond-AR.png"
             ],
             "catalogLink": "../path/to/Tek-Bond-AR.pdf",
-            "category": "Adhesives & Bonding Agents"
+            "category": "Adhesives & Bonding Agents",
+            "categoryId": "cat-2"
         },
         "product10": {
             "name": "Tek-Bond EP",
@@ -55,7 +60,8 @@ window.productsData = {
                 "https://i.postimg.cc/T1zS38C2/tekbondep.png"
             ],
             "catalogLink": "../path/to/Tek-Bond-EP.pdf",
-            "category": "Adhesives & Bonding Agents"
+            "category": "Adhesives & Bonding Agents",
+            "categoryId": "cat-2"
         },
         "product14": {
             "name": "Tek-Bind RC",
@@ -64,7 +70,8 @@ window.productsData = {
                 "https://i.postimg.cc/kXk7Jc3C/Tek-Bind-Rc.jpg"
             ],
             "catalogLink": "../path/to/Tek-Bind-RC.pdf",
-            "category": "Pre-plaster Mortars"
+            "category": "Pre-plaster Mortars",
+            "categoryId": "cat-3"
         },
         "product25": {
             "name": "Tek-Crete EFC",
@@ -74,7 +81,8 @@ window.productsData = {
                 "https://i.postimg.cc/RZ7rq0kk/tekcreteefc2.png"
             ],
             "catalogLink": "../path/to/Tek-Crete-EFC.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product46": {
             "name": "Tek-Grout EG",
@@ -85,7 +93,8 @@ window.productsData = {
                 "https://i.postimg.cc/fTmY6Xc1/Tile-Grout-Color-Chart-2.png"
             ],
             "catalogLink": "../path/to/Tek-Grout-EG.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product50": {
             "name": "Tek-Tile ATA",
@@ -94,7 +103,8 @@ window.productsData = {
                 "https://i.postimg.cc/MZ5NHMp6/Gemini-Generated-Image-36imd136imd136im.png"
             ],
             "catalogLink": "../path/to/Tek-Tile-ATA.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product53": {
             "name": "Tek-Tile GP",
@@ -105,7 +115,8 @@ window.productsData = {
                 "https://i.postimg.cc/QNz3mbM7/tilegluegrey.jpg"
             ],
             "catalogLink": "../path/to/Tek-Tile-GP.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product57": {
             "name": "Tek-Tile HP",
@@ -114,7 +125,8 @@ window.productsData = {
                 "https://i.postimg.cc/FKvmcHHn/Tek-tile-HP.jpg"
             ],
             "catalogLink": "../path/to/Tek-Tile-HP.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product69": {
             "name": "Tek-Screed LTW",
@@ -124,7 +136,8 @@ window.productsData = {
             ],
             "catalogLink": "../path/to/Tek-Screed-LTW.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product70": {
             "name": "Tek-Grip Aggregate",
@@ -134,7 +147,8 @@ window.productsData = {
             ],
             "catalogLink": "../path/to/Tek-Grip-Aggregate.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product116": {
             "name": "Tek-Bond GJC (Gypsum Joint Compound)",
@@ -144,7 +158,8 @@ window.productsData = {
                 "https://i.postimg.cc/g28mnZmZ/gypsumjointcompound-28kg.jpg"
             ],
             "catalogLink": "../path/to/Tek-Bond-GJC.pdf",
-            "category": "Miscellaneous"
+            "category": "Miscellaneous",
+            "categoryId": "cat-14"
         },
         "product118": {
             "name": "Tek-Screed 20 C",
@@ -152,7 +167,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-20-C-new.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product119": {
             "name": "Tek-Screed 30 C",
@@ -160,7 +176,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-30-C-new.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product120": {
             "name": "Tek-Screed 40 C",
@@ -168,7 +185,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-40-C-new.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product121": {
             "name": "Tek-Screed 50 C",
@@ -176,7 +194,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-50-C-new-2.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product117": {
             "name": "Tek-Fill ST",
@@ -185,322 +204,368 @@ window.productsData = {
                 "https://i.postimg.cc/VLbcVCSV/stuccoputty25kg.jpg"
             ],
             "catalogLink": "../path/to/Tek-Fill-ST.pdf",
-            "category": "Miscellaneous"
+            "category": "Miscellaneous",
+            "categoryId": "cat-14"
         },
         "product122": {
             "name": "Tek-Plast GP",
             "description": "Tek-Plast GP is a single component gypsum plaster specially formulated from selected gypsum, lightweight aggregates and admixtures. Plastering",
             "images": [],
             "catalogLink": "../path/to/Tek-Plast-GP.pdf",
-            "category": "Exterior & Interior Plasters"
+            "category": "Exterior & Interior Plasters",
+            "categoryId": "cat-1"
         },
         "product123": {
             "name": "Tek-Plast HP",
             "description": "Tek-Plast HP is a single component cementitious plaster specially formulated from selected cements, sand, admixtures and aggregates. Plastering",
             "images": [],
             "catalogLink": "../path/to/Tek-Plast-HP.pdf",
-            "category": "Exterior & Interior Plasters"
+            "category": "Exterior & Interior Plasters",
+            "categoryId": "cat-1"
         },
         "product124": {
             "name": "Thermosit Mortar C",
             "description": "Thermosit Mortar C is a single component polymer rich /f_iber reinforced adhesive/mortar in dry form for the installation of expanded or extruded polystyrene boards and for producing the /f_iber mesh reinforcement layer for External Insulation Fa\u00e7ade System. Thermosit EIFS is designed to provide energy saving and excessive emission of CO/two.numerator into the atmosphere, and protection against Th...",
             "images": [],
             "catalogLink": "../path/to/Thermosit-Mortar-C.pdf",
-            "category": "Exterior & Interior Plasters"
+            "category": "Exterior & Interior Plasters",
+            "categoryId": "cat-1"
         },
         "product125": {
             "name": "Tek-Bond EA",
             "description": "Tek-Bond EA is a multi-component epoxy resin based adhesive specially formulated from graded fillers and non-sagging agents which makes it ideal for",
             "images": [],
             "catalogLink": "../path/to/Tek-Bond-EA.pdf",
-            "category": "Adhesives & Bonding Agents"
+            "category": "Adhesives & Bonding Agents",
+            "categoryId": "cat-2"
         },
         "product126": {
             "name": "Tek-Bond PVA",
             "description": "Tek-Bond PVA is a milky white, latex polymer, based on polyvinyl acetate that is designed to improve the physical",
             "images": [],
             "catalogLink": "../path/to/Tek-Bond-PVA.pdf",
-            "category": "Adhesives & Bonding Agents"
+            "category": "Adhesives & Bonding Agents",
+            "categoryId": "cat-2"
         },
         "product127": {
             "name": "Tek-Bond SBR",
             "description": "Tek-Bond SBR is a milky white, latex polymer, based on styrene butadiene rubber that is designed to improve the physical",
             "images": [],
             "catalogLink": "../path/to/Tek-Bond-SBR.pdf",
-            "category": "Adhesives & Bonding Agents"
+            "category": "Adhesives & Bonding Agents",
+            "categoryId": "cat-2"
         },
         "product128": {
             "name": "Tek-Bind CHB",
             "description": "Tek-Bind CHB is single component dry pre-mixed polymer modified sand cement mortar adhesive specially formulated for concrete hollow core blocks",
             "images": [],
             "catalogLink": "../path/to/Tek-Bind-CHB.pdf",
-            "category": "Pre-plaster Mortars"
+            "category": "Pre-plaster Mortars",
+            "categoryId": "cat-3"
         },
         "product129": {
             "name": "Tek-Bond LCB",
             "description": "Tek-Bond LCB Single component dry pre-mixed polymer modified sand cement thin bed mortar adhesive specially formulated autoclaved aerated light weight concrete blocks, calcium silicate blocks and panels.",
             "images": [],
             "catalogLink": "../path/to/Tek-Bond-LCB.pdf",
-            "category": "Pre-plaster Mortars"
+            "category": "Pre-plaster Mortars",
+            "categoryId": "cat-3"
         },
         "product130": {
             "name": "Tek-Cure AR",
             "description": "Tek-Cure AR is a white liquid curing compound based on acrylic resin which cures to form a clear non-penetrating, seamless membrane over new concrete. Preventing rapid water loss during early hardening stage, hence improving the efficiency of cement hydration, increasing durability and reducing the chance of plastic shrinkage cracks.",
             "images": [],
             "catalogLink": "../path/to/Tek-Cure-AR.pdf",
-            "category": "Curing Compounds"
+            "category": "Curing Compounds",
+            "categoryId": "cat-4"
         },
         "product131": {
             "name": "Tek-Cure CS",
             "description": "Tek-Cure CS is a multipurpose acrylic emulsion resin and wetting agent which makes it ideal for",
             "images": [],
             "catalogLink": "../path/to/Tek-Cure-CS.pdf",
-            "category": "Curing Compounds"
+            "category": "Curing Compounds",
+            "categoryId": "cat-4"
         },
         "product132": {
             "name": "Tek-Cure WB",
             "description": "Tek-Cure WB is a white liquid curing compound based on wax-base which cures to form a clear non-\npenetrating, seamless membrane over new concrete. Preventing rapid water loss during early hardening stage, hence improving the efficiency of cement hydration, increasing durability and reducing the chance of plastic shrinkage cracks.",
             "images": [],
             "catalogLink": "../path/to/Tek-Cure-WB.pdf",
-            "category": "Curing Compounds"
+            "category": "Curing Compounds",
+            "categoryId": "cat-4"
         },
         "product133": {
             "name": "Tek-Release UR",
             "description": "Tek-Release UR form release agent for all types of formwork used in concrete construction. Tek-Release UR consists of medium viscosity release oils and wetting agents.",
             "images": [],
             "catalogLink": "../path/to/Tek-Release-UR.pdf",
-            "category": "Release Agents"
+            "category": "Release Agents",
+            "categoryId": "cat-5"
         },
         "product134": {
             "name": "Tek-Release WB",
             "description": "Tek-Release WB is form release agent for all types of formwork used in concrete construction. Tek-Release WB is an emulsified blend of mineral oils, waxes and non- hazardous chemicals which is specially formulated to produce release",
             "images": [],
             "catalogLink": "../path/to/Tek-Release-WB.pdf",
-            "category": "Release Agents"
+            "category": "Release Agents",
+            "categoryId": "cat-5"
         },
         "product135": {
             "name": "Tek-Tard SR",
             "description": "Tek-Tard SR is a cementatious surface retarder which is an emulsion of natural retarders and wetting agents providing surface retarder",
             "images": [],
             "catalogLink": "../path/to/Tek-Tard-SR.pdf",
-            "category": "Release Agents"
+            "category": "Release Agents",
+            "categoryId": "cat-5"
         },
         "product136": {
             "name": "Tek-Crete CFC",
             "description": "Tek-Crete CFC is a single component cementitious polymer modified specially formulated from selected cements, sand, admixtures and aggregates. Skim coat",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-CFC.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product137": {
             "name": "Tek-Crete CPC",
             "description": "Tek-Crete CPC is a single component high strength cementitious pile head repair & re-profiling mortar formulated from selected cements, sand, admixtures and aggregates.",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-CPC.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product138": {
             "name": "Tek-Crete CR",
             "description": "Tek-Crete CR is a single component high polymer non-shrink high strength cementitious crack repair mortar formulated from selected cements, sand, admixtures and aggregates. It is ideal for both internal & external use.",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-CR.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product139": {
             "name": "Tek-Crete EGP",
             "description": "Tek-Crete EGP is a three component, trowellable, high build epoxy repair mortar. It is a solvent free system consisting of epoxy resin, amine hardener and specially graded quartz fillers. This is especially suited for general purpose horizontal repairs requiring high early mechanical strength upto 30 mm thickness in a single layer",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-EGP.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product140": {
             "name": "Tek-Crete EMH",
             "description": "Tek- Crete EMH is a high strength epoxy lining mortar for the restoration of manhole benching. It can be used as a lining mortar in chemically aggressive situations.",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-EMH.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product141": {
             "name": "Tek-Crete FL",
             "description": "Tek-Crete FL is a single component fiber reinforced non-shrink cementatious repair mortar formulated from selected cements, sand, admixtures and aggregates. It has exceptional resistance to carbonation, chloride ingress, sulfate attack and freeze thaw attack.",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-FL.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product142": {
             "name": "Tek-Crete FR",
             "description": "Tek-Crete FR is a single component fiber reinforced non-shrink high strength cementitious repair mortar formulated from selected cements, sand, admixtures and aggregates. It has exceptional resistance to carbonation, chloride ingress, sulfate attack and freeze thaw attack.",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-FR.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product143": {
             "name": "Tek-Crete LW",
             "description": "Tek-Crete LW is a single component Fiber Reinforced non-shrink cementatious lightweight repair mortar formulated from selected cements, sand, admixtures and aggregates. It has exceptional resistance to carbonation, chloride ingress, sulfate attack and freeze thaw attack.",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-LW.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product144": {
             "name": "Tek-Crete MC",
             "description": "Tek-Crete MC is a single component high strength cementitious free flowing micro concrete formulated from selected cements, sand, admixtures and aggregates. It can be used at a wide range of repairs. When used as a fluid micro concrete it is self-compacting. It is resistance to chloride ingress, carbonation, freeze thaw attack and sulfate attack.",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-MC.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product145": {
             "name": "Tek-Crete MCH",
             "description": "Tek-Crete MCH is a single component free flowing high strength cementitious micro concrete formulated from selected cements, sand, admixtures and aggregates. It can be used at a wide range of repairs. When used as a fluid micro concrete it is self-compacting. It is resistance to chloride ingress, carbonation, freeze thaw attack and sulfate attack.",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-MCH.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product146": {
             "name": "Tek-Crete SCR",
             "description": "Tek-Crete SCR is a single component high polymer non-\nshrink high strength cementitious crack repair mortar formulated from selected cements, sand, admixtures and aggregates. It is ideal for both internal & external use.",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-SCR.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product147": {
             "name": "Tek-Crete TRM",
             "description": "Tek-Crete TRM is a single component cementatious polymer modified thin rendering mortar, specially formulated from blended cements, sand, acrylic polymers and graded sands. It is used for horizontal, vertical and overhead",
             "images": [],
             "catalogLink": "../path/to/Tek-Crete-TRM.pdf",
-            "category": "Concrete Repairs"
+            "category": "Concrete Repairs",
+            "categoryId": "cat-6"
         },
         "product148": {
             "name": "Tek-Grout AG",
             "description": "Tek-Grout AG is a three component solvent-free thixotropic epoxy anchoring grout. Specially designed for a variety of grouting and anchoring",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-AG.pdf",
-            "category": "Structural Grouts"
+            "category": "Structural Grouts",
+            "categoryId": "cat-7"
         },
         "product149": {
             "name": "Tek-Grout CG",
             "description": "Tek-Grout CG is a pre-mixed cementatious high performance, fluid cementatious grout with extended working time and shrinkage compensation system.",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-CG.pdf",
-            "category": "Structural Grouts"
+            "category": "Structural Grouts",
+            "categoryId": "cat-7"
         },
         "product150": {
             "name": "Tek-Grout EP",
             "description": "Tek-Grout EP is a pourable epoxy resin grout used for variety of grouting and anchoring",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-EP.pdf",
-            "category": "Structural Grouts"
+            "category": "Structural Grouts",
+            "categoryId": "cat-7"
         },
         "product151": {
             "name": "Tek-Grout HS",
             "description": "Tek-Grout HS is a pre-mixed cementitious high strength non-shrink grout with special cement, sand and expansion agents providing a smooth pouring or trowellable grade consistency that completely fills the void between base plates and foundations, for gap widths of in a single layer of grout.",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-HS.pdf",
-            "category": "Structural Grouts"
+            "category": "Structural Grouts",
+            "categoryId": "cat-7"
         },
         "product152": {
             "name": "Tek-Grout IR",
             "description": "Tek-Grout IR is a two component solvent-free 100% solids clear multi-purpose epoxy resin grout. It is a high modulus, moisture insensitive system designed to penetrate and seal cracks in concrete and other mineral substrates. It has very low viscosity and will penetrate thin cracks from 0.2mm to 15mm.",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-IR.pdf",
-            "category": "Structural Grouts"
+            "category": "Structural Grouts",
+            "categoryId": "cat-7"
         },
         "product153": {
             "name": "Tek-Grout LE",
             "description": "Tek-Grout LE is a three component solvent-free multi-\npurpose epoxy grout. Specially designed for a variety of grouting and anchoring",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-LE.pdf",
-            "category": "Structural Grouts"
+            "category": "Structural Grouts",
+            "categoryId": "cat-7"
         },
         "product154": {
             "name": "Tek-Grout NSG",
             "description": "Tek-Grout NSG is a pre-mixed cementitious non-shrink grout with special cement, sand and expansion agents providing a smooth pouring or trowellable grade consistency that completely fills the void between base plates and foundations, for gap widths of in a single layer of grout.",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-NSG.pdf",
-            "category": "Structural Grouts"
+            "category": "Structural Grouts",
+            "categoryId": "cat-7"
         },
         "product155": {
             "name": "Tek-Grout PG",
             "description": "Tek-Grout PG is a pourable polyester resin grout used for variety of grouting and anchoring",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-PG.pdf",
-            "category": "Structural Grouts"
+            "category": "Structural Grouts",
+            "categoryId": "cat-7"
         },
         "product156": {
             "name": "Tek-Grout WR",
             "description": "Tek-Grout WR is a low viscosity polyurethane grout designed to react with water to form polyurethane foam for use as a water stopping system.",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-WR.pdf",
-            "category": "Structural Grouts"
+            "category": "Structural Grouts",
+            "categoryId": "cat-7"
         },
         "product157": {
             "name": "Tek-Glue MBL",
             "description": "Tek-Glue MBL is a single component cementatious marble fixing adhesive based on high polymer system with superior adhesion, high strength for dry areas in interior & exterior",
             "images": [],
             "catalogLink": "../path/to/Tek-Glue-MBL.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product158": {
             "name": "Tek-Grout AFG",
             "description": "Tek-Grout AFG is a single component cementitious grout designed specifically for wall and floor tile",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-AFG.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product159": {
             "name": "Tek-Grout GP",
             "description": "Tek-Grout GP is a single component cementitious general purpose coloured tile grout based on a Portland cement, specially selected binders, polymers organic chemicals and colour pigments with water resistance and superior hygienic",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-GP.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product160": {
             "name": "Tek-Grout WJ",
             "description": "Tek-Grout WJ is a single component cementitious wide joint coloured tile grout based on a Portland cement, specially selected binders, polymers organic chemicals and colour pigments with water resistance and superior cohesion",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-WJ.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product161": {
             "name": "Tek-Grout WP",
             "description": "Tek-Grout WP is a single component latex modified coloured tile grout based on Portland cement, specially selected binders, polymers and colour pigment with water resistance and superior hygienic",
             "images": [],
             "catalogLink": "../path/to/Tek-Grout-WP.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product162": {
             "name": "Tek-Tile EP",
             "description": "Tek-Tile EP is a two component epoxy tile adhesive based on a high grade epoxy resin system with superior adhesion, high strength, chemical resistance and",
             "images": [],
             "catalogLink": "../path/to/Tek-Tile-EP.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product163": {
             "name": "Tek-Tile GCU",
             "description": "Tek-Tile GCU is a single component cementitious waterproof tile adhesive based on a high polymer system with superior adhesion, high strength, and it has waterproof",
             "images": [],
             "catalogLink": "../path/to/Tek-Tile-GCU.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product164": {
             "name": "Tek-Tile NS",
             "description": "Tek-Tile NS is a single component cementatious marble fixing adhesive based on high polymer system with superior adhesion, high strength for dry areas in interior & exterior",
             "images": [],
             "catalogLink": "../path/to/Tek-Tile-NS.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product165": {
             "name": "Tek-Tile TT",
             "description": "Tek-Tile TT is a single component cementatious tile adhesive based on high polymer system with superior adhesion, high strength for dry areas in interior & exterior",
             "images": [],
             "catalogLink": "../path/to/Tek-Tile-TT.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product166": {
             "name": "Tek-Tile WPS",
             "description": "Tek-Tile WPS is a single component cementitious tile adhesive based on a high polymer system with superior adhesion, high strength, and interior & exterior",
             "images": [],
             "catalogLink": "../path/to/Tek-Tile-WPS.pdf",
-            "category": "Tile Adhesives & Grouts"
+            "category": "Tile Adhesives & Grouts",
+            "categoryId": "cat-8"
         },
         "product167": {
             "name": "Tek-Floor FHQ",
@@ -508,7 +573,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-FHQ.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product168": {
             "name": "Tek-Floor FHS",
@@ -516,7 +582,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-FHS.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product169": {
             "name": "Tek-Floor SL 10-30",
@@ -524,7 +591,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-SL-10-30.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product170": {
             "name": "Tek-Floor SL 10-40",
@@ -532,7 +600,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-SL-10-40.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product171": {
             "name": "Tek-Floor SL 10-70",
@@ -540,7 +609,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-SL-10-70.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product172": {
             "name": "Tek-Floor SL HS",
@@ -548,7 +618,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-SL-HS.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product173": {
             "name": "Tek-Floor SL",
@@ -556,7 +627,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-SL.pdf",
             "category": "Flooring",
-            "subcategory": "Cementitious System"
+            "subcategory": "Cementitious System",
+            "categoryId": "cat-9"
         },
         "product174": {
             "name": "Tek-Inlay Crystal",
@@ -564,7 +636,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Inlay-Crystal.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product175": {
             "name": "Tek-Floor Deck",
@@ -572,7 +645,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-Deck.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product176": {
             "name": "Tek-Floor FHL",
@@ -580,7 +654,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-FHL.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product177": {
             "name": "Tek-Floor PU",
@@ -588,7 +663,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-PU.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product178": {
             "name": "Tek-Floor SB",
@@ -596,7 +672,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-SB.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product179": {
             "name": "Tek-Floor SF",
@@ -604,7 +681,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-SF.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product180": {
             "name": "Tek-Floor UVR",
@@ -612,7 +690,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-UVR.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product181": {
             "name": "Tek-Floor WB",
@@ -620,7 +699,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Floor-WB.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product182": {
             "name": "Tek-Screed ES Epoxy Screed",
@@ -628,7 +708,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-ES-Epoxy-Screed.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product183": {
             "name": "Tek-Screed PU Screed",
@@ -636,7 +717,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-PU-Screed.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product184": {
             "name": "Tek-Screed SS PU Topping",
@@ -644,7 +726,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-SS-PU-Topping.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product185": {
             "name": "Tek-Screed SS",
@@ -652,7 +735,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-SS.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product186": {
             "name": "Tek-Screed SS1",
@@ -660,7 +744,8 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Screed-SS1.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product187": {
             "name": "Tek-Seal SF",
@@ -668,231 +753,264 @@ window.productsData = {
             "images": [],
             "catalogLink": "../path/to/Tek-Seal-SF.pdf",
             "category": "Flooring",
-            "subcategory": "Resin System"
+            "subcategory": "Resin System",
+            "categoryId": "cat-9"
         },
         "product188": {
             "name": "Tek-Coat AC",
             "description": "Tek-Coat AC is a single component water-based high performance elastomeric anti-carbonation and decorative protective coating. It is designed to provide resistance and protection against chloride ingress. These superior",
             "images": [],
             "catalogLink": "../path/to/Tek-Coat-AC.pdf",
-            "category": "Protective Coatings"
+            "category": "Protective Coatings",
+            "categoryId": "cat-10"
         },
         "product189": {
             "name": "Tek-Coat CR",
             "description": "Tek-Coat CR is a two component solvent-free high performance ceramic enhanced, high build epoxy coating. It is designed to provide high abrasion resistance and protection against chemical attack. These superior",
             "images": [],
             "catalogLink": "../path/to/Tek-Coat-CR.pdf",
-            "category": "Protective Coatings"
+            "category": "Protective Coatings",
+            "categoryId": "cat-10"
         },
         "product190": {
             "name": "Tek-Coat HB",
             "description": "Tek-Coat HB is a two component solvent-free high performance ceramic enhanced, high build epoxy coating. It is designed to provide high abrasion resistance and protection against chemical attack. These superior",
             "images": [],
             "catalogLink": "../path/to/Tek-Coat-HB.pdf",
-            "category": "Protective Coatings"
+            "category": "Protective Coatings",
+            "categoryId": "cat-10"
         },
         "product191": {
             "name": "Tek-Coat UVR",
             "description": "Tek-Coat UVR is a high performance polyurethane system specially developed for the long term cosmetic protection of all types of structures such as concrete, brickwork, plaster, GRP , steel, aluminium or galvanised steel.\nTek-Coat UVR is based on a unique blend of acrylic and urethane polymers reinforced with colour stable and chemical resistance pigments to provide a system that provides outstand...",
             "images": [],
             "catalogLink": "../path/to/Tek-Coat-UVR.pdf",
-            "category": "Protective Coatings"
+            "category": "Protective Coatings",
+            "categoryId": "cat-10"
         },
         "product192": {
             "name": "Tek-Coat WB",
             "description": "Tek-Coat WB is a high performance water based epoxy coating designed for use in internal wall surface and is ideal for",
             "images": [],
             "catalogLink": "../path/to/Tek-Coat-WB.pdf",
-            "category": "Protective Coatings"
+            "category": "Protective Coatings",
+            "categoryId": "cat-10"
         },
         "product193": {
             "name": "Tek-Coat WP",
             "description": "Tek-Coat WP is a single component water-based high performance elastomeric weather proof and decorative protective coating. It is designed to provide resistance and protection against chloride ingress. These superior",
             "images": [],
             "catalogLink": "../path/to/Tek-Coat-WP.pdf",
-            "category": "Protective Coatings"
+            "category": "Protective Coatings",
+            "categoryId": "cat-10"
         },
         "product194": {
             "name": "Tek-Coat WR",
             "description": "Tek-Coat WR is a single component high penetrating silane siloxane based waterproof protective treatment on a wide range of masonry substrates without affecting the natural appearance of the surface.",
             "images": [],
             "catalogLink": "../path/to/Tek-Coat-WR.pdf",
-            "category": "Protective Coatings"
+            "category": "Protective Coatings",
+            "categoryId": "cat-10"
         },
         "product195": {
             "name": "Tek-Fill JM",
             "description": "Tek-Fill JM is a single component acrylic joint mastic sealant designed to fill internal joints or as an interior filler for many common building materials, to provide a smooth ready surface for painting or any coverings.",
             "images": [],
             "catalogLink": "../path/to/Tek-Fill-JM.pdf",
-            "category": "Sealants"
+            "category": "Sealants",
+            "categoryId": "cat-11"
         },
         "product196": {
             "name": "Tek-Seal AR",
             "description": "Tek-Seal AR is a single component acrylic co-polymer mastic sealant designed to fill internal joints or as an interior filler for many common building materials, to provide a smooth ready surface for painting or any coverings.",
             "images": [],
             "catalogLink": "../path/to/Tek-Seal-AR.pdf",
-            "category": "Sealants"
+            "category": "Sealants",
+            "categoryId": "cat-11"
         },
         "product197": {
             "name": "Tek-Seal PS",
             "description": "Tek-Seal PS is a high performance polysulphide sealant which is used in variety of",
             "images": [],
             "catalogLink": "../path/to/Tek-Seal-PS.pdf",
-            "category": "Sealants"
+            "category": "Sealants",
+            "categoryId": "cat-11"
         },
         "product198": {
             "name": "Tek-Seal PU",
             "description": "Tek-Seal PU is a high performance, one part, moisture cured polyurethane sealant for multipurpose use in expansion and construction joints.",
             "images": [],
             "catalogLink": "../path/to/Tek-Seal-PU.pdf",
-            "category": "Sealants"
+            "category": "Sealants",
+            "categoryId": "cat-11"
         },
         "product199": {
             "name": "Tek-Flex RW",
             "description": "Tek-Flex RW is a single component elastomeric UV resistant acrylic waterproof and protective coating, also used to protect exposed concrete structures against carbonation and chloride ion diffusion.",
             "images": [],
             "catalogLink": "../path/to/Tek-Flex-RW.pdf",
-            "category": "Waterproofing"
+            "category": "Waterproofing",
+            "categoryId": "cat-12"
         },
         "product200": {
             "name": "Tek-Flex RWX",
             "description": "Tek-Flex RWX is a single component elastomeric UV resistant acrylic waterproof and protective coating, also used to protect exposed concrete structures against carbonation and chloride ion diffusion.",
             "images": [],
             "catalogLink": "../path/to/Tek-Flex-RWX.pdf",
-            "category": "Waterproofing"
+            "category": "Waterproofing",
+            "categoryId": "cat-12"
         },
         "product201": {
             "name": "Tek-Plug WP",
             "description": "Tek-Plug WP is a single component quick setting cementitious water stopping mortar specially formulated from chloride free hydraulic cements and silica sand.",
             "images": [],
             "catalogLink": "../path/to/Tek-Plug-WP.pdf",
-            "category": "Waterproofing"
+            "category": "Waterproofing",
+            "categoryId": "cat-12"
         },
         "product202": {
             "name": "Tek-Prufe CCW",
             "description": "Tek-Prufe CCW is a single component cementitious crystalline waterproof coating for new and old concrete and masonry surfaces to resist hydrostatic pressure.",
             "images": [],
             "catalogLink": "../path/to/Tek-Prufe-CCW.pdf",
-            "category": "Waterproofing"
+            "category": "Waterproofing",
+            "categoryId": "cat-12"
         },
         "product203": {
             "name": "Tek-Prufe CF",
             "description": "Tek-Prufe CF is a two component cementitious flexible waterproof coating for concrete and masonry surfaces.",
             "images": [],
             "catalogLink": "../path/to/Tek-Prufe-CF.pdf",
-            "category": "Waterproofing"
+            "category": "Waterproofing",
+            "categoryId": "cat-12"
         },
         "product204": {
             "name": "Tek-Prufe CW",
             "description": "Tek-Prufe CW is a single component cementatious waterproof coating for new and old concrete and masonry surfaces.",
             "images": [],
             "catalogLink": "../path/to/Tek-Prufe-CW.pdf",
-            "category": "Waterproofing"
+            "category": "Waterproofing",
+            "categoryId": "cat-12"
         },
         "product205": {
             "name": "Tek-Prufe HS",
             "description": "Versatile sealing for irregular and difficult joints and cracks, withstands extreme movements and chemical exposures while maintaining a watertight seal.",
             "images": [],
             "catalogLink": "../path/to/Tek-Prufe-HS.pdf",
-            "category": "Waterproofing"
+            "category": "Waterproofing",
+            "categoryId": "cat-12"
         },
         "product206": {
             "name": "Tek-Prufe PU",
             "description": "Tek-prufe PU is a single component, VOC compliant, moisture cured, modified polyurethane waterproofing membrane with very good elongation",
             "images": [],
             "catalogLink": "../path/to/Tek-Prufe-PU.pdf",
-            "category": "Waterproofing"
+            "category": "Waterproofing",
+            "categoryId": "cat-12"
         },
         "product207": {
             "name": "Tek-Prufe PUF",
             "description": "Tek-Prufe PUF is a two component, solvent free, polyurethane based waterproofing membrane with crack bridging capability. As it is very reactive, it can only be applied with a special spray equipment.",
             "images": [],
             "catalogLink": "../path/to/Tek-Prufe-PUF.pdf",
-            "category": "Waterproofing"
+            "category": "Waterproofing",
+            "categoryId": "cat-12"
         },
         "product208": {
             "name": "Tek-Clean RC",
             "description": "Tek-Clean RC is a single component acidic solution specially formulated to remove rust from metal surfaces without any mechanical methods. Tek-Clean RC removes rust and converts the residue to a phosphate protective coating appropriate for priming or painting.",
             "images": [],
             "catalogLink": "../path/to/Tek-Clean-RC.pdf",
-            "category": "Primers, Thinners & Cleaners"
+            "category": "Primers, Thinners & Cleaners",
+            "categoryId": "cat-13"
         },
         "product209": {
             "name": "Tek-Inlay Primer",
             "description": "Tek-Inlay Primer is a cementatious primer comprising of white cement, graded sand, fibres and additives for use as a primer on Tek-Inlay Crystal plaster",
             "images": [],
             "catalogLink": "../path/to/Tek-Inlay-Primer.pdf",
-            "category": "Primers, Thinners & Cleaners"
+            "category": "Primers, Thinners & Cleaners",
+            "categoryId": "cat-13"
         },
         "product210": {
             "name": "Tek-Prime AC",
             "description": "Tek-Prime AC is a single component high performance Acrylic polymer primer suitable for use with a wide range of coating systems.",
             "images": [],
             "catalogLink": "../path/to/Tek-Prime-AC.pdf",
-            "category": "Primers, Thinners & Cleaners"
+            "category": "Primers, Thinners & Cleaners",
+            "categoryId": "cat-13"
         },
         "product211": {
             "name": "Tek-Prime AR",
             "description": "Tek-Prime AR is a single component high performance Acrylic polymer primer suitable for use with a wide range of renders, screeds and mortar systems.",
             "images": [],
             "catalogLink": "../path/to/Tek-Prime-AR.pdf",
-            "category": "Primers, Thinners & Cleaners"
+            "category": "Primers, Thinners & Cleaners",
+            "categoryId": "cat-13"
         },
         "product212": {
             "name": "Tek-prime PU",
             "description": "Tek-Prime PU is a high performance, low viscosity primer designed for use as a multipurpose floor sealing and priming system for porous asphalt and concrete floors prior to",
             "images": [],
             "catalogLink": "../path/to/Tek-prime-PU.pdf",
-            "category": "Primers, Thinners & Cleaners"
+            "category": "Primers, Thinners & Cleaners",
+            "categoryId": "cat-13"
         },
         "product213": {
             "name": "Tek-Prime SB",
             "description": "Tek-Prime SB is a two component solvent based high performance epoxy primer suitable for use with a wide range of epoxy and polyurethane systems coating.",
             "images": [],
             "catalogLink": "../path/to/Tek-Prime-SB.pdf",
-            "category": "Primers, Thinners & Cleaners"
+            "category": "Primers, Thinners & Cleaners",
+            "categoryId": "cat-13"
         },
         "product214": {
             "name": "Tek-Prime SF",
             "description": "Tek-Prime SF is a two component solvent-free high performance, high build epoxy primer suitable for use with a wide range of epoxy and polyurethane floor coatings and Tek-Coat systems.",
             "images": [],
             "catalogLink": "../path/to/Tek-Prime-SF.pdf",
-            "category": "Primers, Thinners & Cleaners"
+            "category": "Primers, Thinners & Cleaners",
+            "categoryId": "cat-13"
         },
         "product215": {
             "name": "Tek-Prime ZR",
             "description": "Tek-Prime ZR is a single component high performance zinc rich anti corrosion epoxy primer to protect exposed reinforcement steel to extend the life of repairs made to reinforced concrete.",
             "images": [],
             "catalogLink": "../path/to/Tek-Prime-ZR.pdf",
-            "category": "Primers, Thinners & Cleaners"
+            "category": "Primers, Thinners & Cleaners",
+            "categoryId": "cat-13"
         },
         "product216": {
             "name": "Tek-Wash PR",
             "description": "Tek-Wash PR is a single component acidic solution specially formulated to remove paint from masonry and metal surfaces without any mechanical methods. Tek-Wash PR removes paint and cleans the substrate to receive protective coatings.",
             "images": [],
             "catalogLink": "../path/to/Tek-Wash-PR.pdf",
-            "category": "Primers, Thinners & Cleaners"
+            "category": "Primers, Thinners & Cleaners",
+            "categoryId": "cat-13"
         },
         "product217": {
             "name": "Spraytek Gypsum Powder",
             "description": "Spraytek Gypsum Powder is a soft sulfate mineral composed of calcium sulfate dihydrate, with the chemical formula CaSO4\u20222H2O. It can be used as a fertilizer, is the main constituent in many forms of plaster and in blackboard, and is widely mined.",
             "images": [],
             "catalogLink": "../path/to/Spraytek-Gypsum-Powder.pdf",
-            "category": "Miscellaneous"
+            "category": "Miscellaneous",
+            "categoryId": "cat-14"
         },
         "product218": {
             "name": "Tek-Backing Rod",
             "description": "Tek-Backing Rod is a polyethylene foam supplied in cord form for use as a backup material for joint sealants. It is a light and durable material with excellent shock absorbing and heat insulating",
             "images": [],
             "catalogLink": "../path/to/Tek-Backing-Rod.pdf",
-            "category": "Miscellaneous"
+            "category": "Miscellaneous",
+            "categoryId": "cat-14"
         },
         "product219": {
             "name": "Tek-Prufe Geotex",
             "description": "Tek-Prufe Geotex is a non-woven polymer geotextile engineered to resist degradation from ultraviolet exposure. It shall be non-biodegradable, stable within a pH range of 2 to 13, resistant to mildew, insects and common chemicals encountered in soil.",
             "images": [],
             "catalogLink": "../path/to/Tek-Prufe-Geotex.pdf",
-            "category": "Miscellaneous"
+            "category": "Miscellaneous",
+            "categoryId": "cat-14"
         }
     }
 };

@@ -32,15 +32,15 @@ def main():
     mapping_count = 0
     
     for block in cat_blocks:
-        # Extract category name
-        h2_match = re.search(r'<h2>(.*?)</h2>', block, re.IGNORECASE)
+        # Extract category name and ID
+        h2_match = re.search(r'<h2 id="(cat-\d+)">(.*?)</h2>', block, re.IGNORECASE)
         if not h2_match:
             continue
-        category_name = h2_match.group(1).strip()
+        category_id = h2_match.group(1)
+        category_name = h2_match.group(2).strip()
         category_name = re.sub(r'^\d+\.\s*', '', category_name)
         
         # Check for sub-subcategories (Flooring case)
-        # We search for h3 followed by a div class="sub-subcategory"
         ssc_matches = re.finditer(r'<h3>(.*?)</h3>\s*<div class="sub-subcategory">(.*?)</div>', block, re.IGNORECASE | re.DOTALL)
         
         has_ssc = False
@@ -54,6 +54,7 @@ def main():
             for prod_id in links:
                 if prod_id in products:
                     products[prod_id]['category'] = category_name
+                    products[prod_id]['categoryId'] = category_id
                     products[prod_id]['subcategory'] = subcategory_name
                     mapping_count += 1
         
@@ -66,6 +67,7 @@ def main():
                 for prod_id in links:
                     if prod_id in products:
                         products[prod_id]['category'] = category_name
+                        products[prod_id]['categoryId'] = category_id
                         mapping_count += 1
 
     # 3. Save the updated data
@@ -79,7 +81,7 @@ def main():
     with open(data_js_path, 'w', encoding='utf-8') as f:
         f.write(f"window.productsData = {json.dumps(data_obj, indent=4)};\n")
         
-    print(f"Successfully mapped {mapping_count} products to categories.")
+    print(f"Successfully mapped {mapping_count} products to categories with IDs.")
 
 if __name__ == '__main__':
     main()
