@@ -38,16 +38,66 @@ function loadProduct(productId) {
         document.getElementById('productDescription').innerText = product.description;
         
         const catalogLink = product.catalogLink;
-        document.getElementById('catalogLink').setAttribute('href', catalogLink);
-        
-        // Setup inline PDF viewer
-        const pdfFrame = document.getElementById('catalogFrame');
+        const linkEl       = document.getElementById('catalogLink');
+        const pdfFrame     = document.getElementById('catalogFrame');
         const pdfContainer = document.getElementById('pdfContainer');
-        if (catalogLink && catalogLink.toLowerCase().endsWith('.pdf')) {
-            pdfFrame.src = catalogLink + '#view=FitH';
-            pdfContainer.style.display = 'block';
+        const pdfFallback  = document.getElementById('pdfFallback');
+        const viewBtn      = document.getElementById('catalogViewBtn');
+        const downloadBtn  = document.getElementById('catalogDownloadBtn');
+
+        const pdfLoader   = document.getElementById('pdfLoader');
+
+        // Always wire up the download link at the bottom
+        linkEl.setAttribute('href', catalogLink || '#');
+
+        const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+        const hasPdf   = catalogLink && catalogLink.toLowerCase().endsWith('.pdf');
+
+        // Wire fallback buttons regardless of device (they are always correct)
+        if (viewBtn)      viewBtn.setAttribute('href', catalogLink || '#');
+        if (downloadBtn)  downloadBtn.setAttribute('href', catalogLink || '#');
+
+        if (hasPdf) {
+            if (isMobile) {
+                // Mobile: skip iframe entirely — it won't render the PDF
+                pdfContainer.style.display = 'none';
+                pdfFallback.style.display  = 'block';
+            } else {
+                // Desktop: try the iframe, but show fallback if it doesn't load within 8 s
+                pdfContainer.style.display = 'block';
+                pdfFallback.style.display  = 'none';
+                if (pdfLoader) pdfLoader.style.display = 'flex';
+                pdfFrame.src = catalogLink + '#view=FitH';
+
+                // Fallback timer — fires if the iframe stays blank (e.g. browser blocks PDFs)
+                const fallbackTimer = setTimeout(() => {
+                    if (pdfLoader) pdfLoader.style.display = 'none';
+                    showPdfFallback(pdfContainer, pdfFallback);
+                }, 8000);
+
+                // If the iframe loads successfully, cancel the fallback timer
+                pdfFrame.addEventListener('load', () => {
+                    if (pdfLoader) pdfLoader.style.display = 'none';
+                    
+                    // A blank/failed frame still fires 'load', so we try to detect
+                    // an empty contentDocument as a failure signal
+                    try {
+                        const doc = pdfFrame.contentDocument || pdfFrame.contentWindow.document;
+                        if (doc && doc.body && doc.body.innerHTML.trim() === '') {
+                            clearTimeout(fallbackTimer);
+                            showPdfFallback(pdfContainer, pdfFallback);
+                        } else {
+                            clearTimeout(fallbackTimer);
+                        }
+                    } catch (e) {
+                        // Cross-origin frame: assume it loaded OK (PDF rendered by browser plugin)
+                        clearTimeout(fallbackTimer);
+                    }
+                }, { once: true });
+            }
         } else {
             pdfContainer.style.display = 'none';
+            pdfFallback.style.display  = 'none';
         }
 
         // Clear previous images and dots
@@ -77,6 +127,12 @@ function loadProduct(productId) {
     } else {
         console.error('Product not found:', productId);
     }
+}
+
+// Helper function to hide the iframe container and show the fallback card
+function showPdfFallback(container, fallback) {
+    if (container) container.style.display = 'none';
+    if (fallback) fallback.style.display = 'block';
 }
 
 // NEW Slideshow logic for carousel 
