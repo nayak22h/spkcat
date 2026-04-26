@@ -1,8 +1,45 @@
 /* Inherit from root styles if imported after, but they are in separate folders. We can copy the root colors. */
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs a {
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.breadcrumbs a:hover {
+    color: #0c4a6e;
+    text-decoration: underline;
+}
+
+.breadcrumbs .separator {
+    color: #cbd5e1;
+}
+
+.breadcrumbs .current-crumb {
+    color: #0c4a6e;
+    font-weight: 600;
+}
+
+.breadcrumbs .category-crumb,
+.breadcrumbs .subcategory-crumb {
+    color: #64748b;
 }
 
 /* Image carousel styling */

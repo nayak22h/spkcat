@@ -45,8 +45,23 @@ function loadProduct(productId) {
         const viewBtn      = document.getElementById('catalogViewBtn');
         const downloadBtn  = document.getElementById('catalogDownloadBtn');
 
-        const pdfLoader     = document.getElementById('pdfLoader');
         const actionButtons = document.getElementById('actionButtons');
+        const breadcrumbs   = document.getElementById('breadcrumbs');
+
+        // Render Breadcrumbs
+        if (breadcrumbs) {
+            let breadcrumbHtml = `<a href="../index.html">Home</a>`;
+            if (product.category) {
+                breadcrumbHtml += ` <span class="separator">/</span> <span class="category-crumb">${product.category}</span>`;
+            }
+            if (product.subcategory) {
+                breadcrumbHtml += ` <span class="separator">/</span> <span class="subcategory-crumb">${product.subcategory}</span>`;
+            }
+            breadcrumbHtml += ` <span class="separator">/</span> <span class="current-crumb">${product.name}</span>`;
+            breadcrumbs.innerHTML = breadcrumbHtml;
+        }
+
+        const pdfLoader     = document.getElementById('pdfLoader');
 
         // Always wire up the download link at the bottom
         linkEl.setAttribute('href', catalogLink || '#');
