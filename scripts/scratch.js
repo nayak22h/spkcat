@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const dir = 'c:/Users/nayak/Downloads/SpraytekWebsite/spkcat';
+const dir = path.dirname(__dirname);
 const indexPath = path.join(dir, 'index.html');
 const dataPath = path.join(dir, 'Products', 'data.js');
 

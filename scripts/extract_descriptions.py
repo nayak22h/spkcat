@@ -3,7 +3,7 @@ import json
 import re
 from PyPDF2 import PdfReader
 
-dir_path = 'c:/Users/nayak/Downloads/SpraytekWebsite/spkcat'
+dir_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 data_path = os.path.join(dir_path, 'Products', 'data.js')
 pdf_dir = os.path.join(dir_path, 'path', 'to')
 

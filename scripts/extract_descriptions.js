@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const pdf = require('pdf-parse');
 
-const dir = 'c:/Users/nayak/Downloads/SpraytekWebsite/spkcat';
+const dir = path.dirname(__dirname);
 const dataPath = path.join(dir, 'Products', 'data.js');
 const pdfDir = path.join(dir, 'path', 'to');
 

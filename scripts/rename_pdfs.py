@@ -2,7 +2,7 @@ import os
 import json
 import re
 
-dir_path = 'c:/Users/nayak/Downloads/SpraytekWebsite/spkcat'
+dir_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 pdf_dir = os.path.join(dir_path, 'path', 'to')
 data_path = os.path.join(dir_path, 'Products', 'data.js')
 json_path = os.path.join(dir_path, 'Products', 'products.json')

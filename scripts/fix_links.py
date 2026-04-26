@@ -1,14 +1,9 @@
 import os
 import json
 
-dir_path = 'c:/Users/nayak/Downloads/SpraytekWebsite/spkcat'
+dir_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 data_path = os.path.join(dir_path, 'Products', 'data.js')
 json_path = os.path.join(dir_path, 'Products', 'products.json')
-
-def clean_name(name):
-    # Remove variations of " - new" and " - new 2"
-    cleaned = name.replace(" - new 2", "").replace(" - new", "")
-    return cleaned.strip()
 
 def main():
     with open(data_path, 'r', encoding='utf-8') as f:
@@ -25,16 +20,21 @@ def main():
         return
 
     products = data_obj.get('products', {})
-    updated = False
+    
+    fixes = {
+        "product118": "../path/to/Tek-Screed-20-C-new.pdf",
+        "product119": "../path/to/Tek-Screed-30-C-new.pdf",
+        "product120": "../path/to/Tek-Screed-40-C-new.pdf",
+        "product121": "../path/to/Tek-Screed-50-C-new-2.pdf"
+    }
 
-    for key, product in products.items():
-        original_name = product.get('name', '')
-        new_name = clean_name(original_name)
-        
-        if new_name != original_name:
-            print(f"Renamed: '{original_name}' -> '{new_name}'")
-            product['name'] = new_name
-            updated = True
+    updated = False
+    for prod_id, new_link in fixes.items():
+        if prod_id in products:
+            if products[prod_id].get('catalogLink') != new_link:
+                print(f"Fixing {prod_id}: {products[prod_id].get('catalogLink')} -> {new_link}")
+                products[prod_id]['catalogLink'] = new_link
+                updated = True
 
     if updated:
         new_data_content = f"window.productsData = {json.dumps(data_obj, indent=4)};\n"
@@ -45,9 +45,9 @@ def main():
             with open(json_path, 'w', encoding='utf-8') as f:
                 f.write(json.dumps(data_obj, indent=4))
                 
-        print("\nSuccessfully updated product names!")
+        print("\nSuccessfully fixed the broken catalog links!")
     else:
-        print("\nNo names needed updating.")
+        print("\nLinks are already correct.")
 
 if __name__ == '__main__':
     main()
