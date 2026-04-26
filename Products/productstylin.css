@@ -7,34 +7,54 @@
 
 /* Breadcrumbs */
 .breadcrumbs {
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
     color: #64748b;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     flex-wrap: wrap;
+    background: #f8fafc;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
 }
 
 .breadcrumbs a {
     color: #0284c7;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s;
+    transition: all 0.2s;
+    /* Reset global nav a styles */
+    background-color: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    display: inline !important;
 }
 
 .breadcrumbs a:hover {
     color: #0c4a6e;
     text-decoration: underline;
+    transform: none !important;
 }
 
 .breadcrumbs .separator {
     color: #cbd5e1;
+    font-size: 0.75rem;
+    margin: 0 0.25rem;
 }
 
 .breadcrumbs .current-crumb {
     color: #0c4a6e;
     font-weight: 600;
+}
+
+.breadcrumbs .home-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 0.25rem;
 }
 
 .breadcrumbs .category-crumb,
