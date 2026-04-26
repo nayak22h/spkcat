@@ -45,7 +45,8 @@ function loadProduct(productId) {
         const viewBtn      = document.getElementById('catalogViewBtn');
         const downloadBtn  = document.getElementById('catalogDownloadBtn');
 
-        const pdfLoader   = document.getElementById('pdfLoader');
+        const pdfLoader     = document.getElementById('pdfLoader');
+        const actionButtons = document.getElementById('actionButtons');
 
         // Always wire up the download link at the bottom
         linkEl.setAttribute('href', catalogLink || '#');
@@ -57,11 +58,15 @@ function loadProduct(productId) {
         if (viewBtn)      viewBtn.setAttribute('href', catalogLink || '#');
         if (downloadBtn)  downloadBtn.setAttribute('href', catalogLink || '#');
 
+        // Reset visibility
+        if (actionButtons) actionButtons.style.display = 'none';
+
         if (hasPdf) {
             if (isMobile) {
                 // Mobile: skip iframe entirely — it won't render the PDF
                 pdfContainer.style.display = 'none';
                 pdfFallback.style.display  = 'block';
+                if (actionButtons) actionButtons.style.display = 'none'; // Ensure hidden on mobile
             } else {
                 // Desktop: try the iframe, but show fallback if it doesn't load within 8 s
                 pdfContainer.style.display = 'block';
@@ -72,6 +77,7 @@ function loadProduct(productId) {
                 // Fallback timer — fires if the iframe stays blank (e.g. browser blocks PDFs)
                 const fallbackTimer = setTimeout(() => {
                     if (pdfLoader) pdfLoader.style.display = 'none';
+                    if (actionButtons) actionButtons.style.display = 'none';
                     showPdfFallback(pdfContainer, pdfFallback);
                 }, 8000);
 
@@ -85,19 +91,23 @@ function loadProduct(productId) {
                         const doc = pdfFrame.contentDocument || pdfFrame.contentWindow.document;
                         if (doc && doc.body && doc.body.innerHTML.trim() === '') {
                             clearTimeout(fallbackTimer);
+                            if (actionButtons) actionButtons.style.display = 'none';
                             showPdfFallback(pdfContainer, pdfFallback);
                         } else {
                             clearTimeout(fallbackTimer);
+                            if (actionButtons) actionButtons.style.display = 'flex'; // Show button only on success
                         }
                     } catch (e) {
                         // Cross-origin frame: assume it loaded OK (PDF rendered by browser plugin)
                         clearTimeout(fallbackTimer);
+                        if (actionButtons) actionButtons.style.display = 'flex'; // Show button
                     }
                 }, { once: true });
             }
         } else {
             pdfContainer.style.display = 'none';
             pdfFallback.style.display  = 'none';
+            if (actionButtons) actionButtons.style.display = 'none';
         }
 
         // Clear previous images and dots
