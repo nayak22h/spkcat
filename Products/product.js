@@ -158,6 +158,18 @@ function loadProduct(productId) {
         if (product.images.length > 0) {
             showSlides(); // Start the slideshow
         }
+
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        if (prevBtn && nextBtn) {
+            if (product.images.length > 1) {
+                prevBtn.style.display = 'flex';
+                nextBtn.style.display = 'flex';
+            } else {
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+            }
+        }
     } else {
         console.error('Product not found:', productId);
     }
@@ -207,3 +219,22 @@ function currentSlide(index) {
     slideIndex = index;
     showSlides();
 }
+
+function nextSlide() {
+    const slides = document.querySelectorAll('#productImages img');
+    if (slides.length <= 1) return;
+    slideIndex = (slideIndex + 1) % slides.length;
+    showSlides();
+}
+
+function prevSlide() {
+    const slides = document.querySelectorAll('#productImages img');
+    if (slides.length <= 1) return;
+    slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+    showSlides();
+}
+
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+if (nextBtn) nextBtn.addEventListener('click', nextSlide);
