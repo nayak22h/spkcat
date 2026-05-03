@@ -47,7 +47,7 @@ window.productsData = {
             "name": "Tek-Bond AR",
             "description": "Tek-Bond AR is a styrene free, milky white emulsion,based on a pure acrylic polymer that is designed to improve the physical properties and integrity of cementitious mortars, screeds or renders, and act as a bonding agent / sealer to concrete, plaster or other porous substrates. ",
             "images": [
-                "https://i.ibb.co/kgLbh0qm/Tek-bond-AR2.avif"
+                "https://i.postimg.cc/q78hLhQp/Tek-bond-AR2.avif"
             ],
             "catalogLink": "../path/to/Tek-Bond-AR.pdf",
             "category": "Adhesives & Bonding Agents",
