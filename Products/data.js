@@ -250,7 +250,9 @@ window.productsData = {
         "product127": {
             "name": "Tek-Bond SBR",
             "description": "Tek-Bond SBR is a milky white, latex polymer, based on styrene butadiene rubber that is designed to improve the physical",
-            "images": [],
+            "images": [
+                "https://i.postimg.cc/B6LDrLsL/Chat-GPT-Image-Apr-27-2026-12-32-16-PM.png"
+            ],
             "catalogLink": "../path/to/Tek-Bond-SBR.pdf",
             "category": "Adhesives & Bonding Agents",
             "categoryId": "cat-2"
@@ -450,7 +452,9 @@ window.productsData = {
         "product152": {
             "name": "Tek-Grout IR",
             "description": "Tek-Grout IR is a two component solvent-free 100% solids clear multi-purpose epoxy resin grout. It is a high modulus, moisture insensitive system designed to penetrate and seal cracks in concrete and other mineral substrates. It has very low viscosity and will penetrate thin cracks from 0.2mm to 15mm.",
-            "images": [],
+            "images": [
+                "https://i.postimg.cc/Hk9fMnqR/Tek-grout-IR-edited.png"
+            ],
             "catalogLink": "../path/to/Tek-Grout-IR.pdf",
             "category": "Structural Grouts",
             "categoryId": "cat-7"
@@ -597,7 +601,9 @@ window.productsData = {
         "product170": {
             "name": "Tek-Floor SL 10-40",
             "description": "Tek-Floor SL 10-40 is a polymer modified single component self-leveling screed. The material has been specially formulated to provide a smooth crack-free leveled surface.",
-            "images": [],
+            "images": [
+                "https://i.postimg.cc/DwN1BPk9/Tek-Floor-SL-10-40-edited.png"
+            ],
             "catalogLink": "../path/to/Tek-Floor-SL-10-40.pdf",
             "category": "Flooring",
             "subcategory": "Cementitious System",
@@ -624,7 +630,9 @@ window.productsData = {
         "product173": {
             "name": "Tek-Floor SL",
             "description": "Tek-Floor SL is a polymer modified single component self-leveling underlay screed. The material has been specially formulated to provide a smooth crack-free leveled surface.",
-            "images": [],
+            "images": [
+                "https://i.postimg.cc/3RtG0XBt/Tek-Floor-SL-Edited.png"
+            ],
             "catalogLink": "../path/to/Tek-Floor-SL.pdf",
             "category": "Flooring",
             "subcategory": "Cementitious System",
@@ -943,7 +951,9 @@ window.productsData = {
         "product211": {
             "name": "Tek-Prime AR",
             "description": "Tek-Prime AR is a single component high performance Acrylic polymer primer suitable for use with a wide range of renders, screeds and mortar systems.",
-            "images": [],
+            "images": [
+                "https://i.postimg.cc/nLPjHFhf/Tek-Prime-AR-edited.png"
+            ],
             "catalogLink": "../path/to/Tek-Prime-AR.pdf",
             "category": "Primers, Thinners & Cleaners",
             "categoryId": "cat-13"
