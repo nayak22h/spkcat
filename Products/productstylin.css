@@ -113,6 +113,11 @@
     cursor: pointer;
 }
 
+.dot:focus-visible {
+    outline: 2px solid #0284c7;
+    outline-offset: 2px;
+}
+
 .dot:hover {
     background-color: #94a3b8;
     transform: scale(1.2);

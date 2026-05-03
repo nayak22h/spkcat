@@ -3,8 +3,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryHeaders = document.querySelectorAll('.category h2, .category h3');
     
     categoryHeaders.forEach(header => {
+        // Accessibility
+        header.setAttribute('tabindex', '0');
+        header.setAttribute('role', 'button');
+        header.setAttribute('aria-expanded', 'false');
+
         header.addEventListener('click', function() {
             toggleCategory(this);
+        });
+
+        // Keyboard support
+        header.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleCategory(this);
+            }
         });
     });
 
@@ -25,34 +38,37 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
                 openCategory(targetHeader);
-                targetHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                setTimeout(() => {
+                    targetHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 300); // wait for CSS transition
             }
         }
     };
 
     function toggleCategory(header) {
-        var subcategory = header.nextElementSibling;
-        var parentCategory = header.parentElement;
-
-        if (subcategory.style.display === "none" || subcategory.style.display === "") {
-            openCategory(header);
-        } else {
+        if (header.classList.contains("open")) {
             closeCategory(header);
+        } else {
+            openCategory(header);
         }
     }
 
     function openCategory(header) {
-        var subcategory = header.nextElementSibling;
-        var parentCategory = header.parentElement;
-        subcategory.style.display = "block";
-        parentCategory.classList.add("open");
+        var content = header.nextElementSibling;
+        header.classList.add("open");
+        header.setAttribute("aria-expanded", "true");
+        if (content) {
+            content.classList.add("expanded");
+        }
     }
 
     function closeCategory(header) {
-        var subcategory = header.nextElementSibling;
-        var parentCategory = header.parentElement;
-        subcategory.style.display = "none";
-        parentCategory.classList.remove("open");
+        var content = header.nextElementSibling;
+        header.classList.remove("open");
+        header.setAttribute("aria-expanded", "false");
+        if (content) {
+            content.classList.remove("expanded");
+        }
     }
 
     // Run on load

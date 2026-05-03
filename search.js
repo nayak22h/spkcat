@@ -38,11 +38,24 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     };
 
-    // 3. Highlight Matching Text
+    // 3. Highlight Matching Text (and prevent XSS)
+    const escapeHTML = (str) => {
+        return str.replace(/[&<>'"]/g, 
+            tag => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                "'": '&#39;',
+                '"': '&quot;'
+            }[tag] || tag)
+        );
+    };
+
     const highlightMatch = (text, query) => {
-        if (!query) return text;
+        const escapedText = escapeHTML(text);
+        if (!query) return escapedText;
         const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')})`, 'gi');
-        return text.replace(regex, '<strong style="color: var(--primary-color);">$1</strong>');
+        return escapedText.replace(regex, '<strong style="color: var(--primary-color);">$1</strong>');
     };
 
     const normalizeString = (str) => str.toLowerCase().replace(/[^a-z0-9]/g, '');

@@ -30,12 +30,15 @@ header {
     align-items: center;
     gap: 1.5rem;
     padding: 1rem 2.5rem;
-    background-color: var(--card-bg);
-    box-shadow: var(--shadow-sm);
+    background-color: rgba(255, 255, 255, 0.85); /* Glassmorphism */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-md);
     margin-bottom: 2.5rem;
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .header-left {
@@ -171,10 +174,12 @@ nav a:hover {
     background-color: #f1f5f9;
 }
 
-.category.open h2,
-.category.open h3 {
-    border-bottom: 1px solid var(--border-color);
-    background-color: #f8fafc;
+.category h2:focus-visible,
+.category h3:focus-visible,
+.subcategory a:focus-visible,
+.sub-subcategory a:focus-visible {
+    outline: 2px solid var(--primary-light);
+    outline-offset: -2px;
 }
 
 .category h2::after,
@@ -187,28 +192,35 @@ nav a:hover {
     transition: transform 0.3s ease;
 }
 
-.category.open h2::after,
-.category.open h3::after {
+.category h2.open::after,
+.category h3.open::after {
     transform: rotate(180deg);
+}
+
+.category h2.open,
+.category h3.open {
+    border-bottom: 1px solid var(--border-color);
+    background-color: #f8fafc;
 }
 
 .subcategory,
 .sub-subcategory {
-    display: none;
-    padding: 1rem 1.5rem;
-    animation: fadeIn 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-5px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.subcategory.expanded,
+.sub-subcategory.expanded {
+    max-height: 2500px; /* Arbitrary large value to allow smooth expansion */
+    opacity: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .subcategory a,
