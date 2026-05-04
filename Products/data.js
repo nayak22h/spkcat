@@ -887,7 +887,9 @@ window.productsData = {
         "product203": {
             "name": "Tek-Prufe CF",
             "description": "Tek-Prufe CF is a two component cementitious flexible waterproof coating for concrete and masonry surfaces.",
-            "images": [],
+            "images": [
+                "https://i.postimg.cc/ZnBfHS9N/Tek-Prufe-CF.avif"
+            ],
             "catalogLink": "../path/to/Tek-Prufe-CF.pdf",
             "category": "Waterproofing",
             "categoryId": "cat-12"
