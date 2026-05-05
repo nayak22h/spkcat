@@ -15,8 +15,8 @@ window.productsData = {
             "name": "Tek-Plast AC",
             "description": "Tek-Plast AC is a single component acrylic plaster specially formulated from selected acrylic co-polymers, binders, sand, admixtures and aggregates. Plastering application on all kinds of internal building surfaces.",
             "images": [
-                "https://i.postimg.cc/J0RpGq5D/TEK-Plast-AC-medium-25kg.jpg",
-                "https://i.postimg.cc/c1gHtJ34/Tek-Plast-Ac-fine-25kg.jpg"
+                "https://i.postimg.cc/sfKmm6f0/TEK-Plast-AC-medium-25kg-new.avif",
+                "https://i.postimg.cc/RCGddsCk/Tek-Plast-Ac-fine-25kg-new.avif"
             ],
             "catalogLink": "../path/to/Tek-Plast-AC.pdf",
             "category": "Exterior & Interior Plasters",
