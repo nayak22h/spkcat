@@ -58,12 +58,16 @@ h1, h2, h3, h4 {
     padding: 0.75rem 5%;
 }
 
+.nav-brand, .brand-name {
+    font-family: 'Bauhaus 93', 'Arial Rounded MT Bold', sans-serif;
+}
+
 .nav-brand {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.8rem;
+    font-weight: normal;
     color: var(--primary-color);
     text-decoration: none;
-    letter-spacing: -0.5px;
+    letter-spacing: 0.5px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -398,10 +402,11 @@ h1, h2, h3, h4 {
 }
 
 .footer-brand {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.8rem;
+    font-weight: normal;
     margin-bottom: 1rem;
     display: block;
+    font-family: 'Bauhaus 93', 'Arial Rounded MT Bold', sans-serif;
 }
 
 .footer-col p {
